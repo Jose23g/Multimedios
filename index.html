@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="iconos/css/all.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/cabeza.css">
+    <link rel="stylesheet" href="css/lightslider.css">
+    <script src="js/JQuery3.3.1.js"></script>
+    <script src="js/lightslider.js"></script>
+    <script src="js/consumirAPI.js" type="text/javascript"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <title>Proyecto Personal</title>
+</head>
+
+<body>
+    
+    <!--Navigation bar-->
+<div class="flex Cabecera justify-between items-center">
+    
+</div>
+
+<script>
+$(function(){
+  $(".Cabecera").load("cabecera.html");
+});
+</script>
+<!--end of Navigation bar-->
+
+
+    
+    <section id="main">
+
+        <h1 class="showcase-heading">Proximos estrenos</h1>
+        <ul id="autoWidth" class="cs-hidden">
+            <li class="item-a">
+                <div class="showcase-box">
+                    <img src="img/cartelera1.jpg" />
+                    <div class="capa">
+                        <h3>Tres 60</h3>
+                        <p>Esperando impresionar a una mujer joven que le gusta a él, un estudiante mujeriego comienza una peligrosa investigación sobre el origen de algunas imágenes intrigantes que encontró en un rollo de película.</p>
+                    </div>
+                </div>
+            </li>
+            <li class="item-a">
+                <div class="showcase-box">
+                    <img src="img/cartelera2.jpg" />
+                    <div class="capa">
+                        <h3>Dumbo (2020)</h3>
+                        <p>Esperando impresionar a una mujer joven que le gusta a él, un estudiante mujeriego comienza una peligrosa investigación sobre el origen de algunas imágenes intrigantes que encontró en un rollo de película.</p>
+                    </div>
+                </div>
+            </li>
+            <li class="item-a">
+                <div class="showcase-box">
+                    <img src="img/cartelera3.jpg" />
+                    <div class="capa">
+                        <h3>Cleopatra (2020)</h3>
+                        <p>Esperando impresionar a una mujer joven que le gusta a él, un estudiante mujeriego comienza una peligrosa investigación sobre el origen de algunas imágenes intrigantes que encontró en un rollo de película.</p>
+                    </div>
+                </div>
+            </li>
+            <li class="item-a">
+                <div class="showcase-box">
+                    <img src="img/cartelera4.jpg" />
+                    <div class="capa">
+                        <h3>Tres 60</h3>
+                        <p>Esperando impresionar a una mujer joven que le gusta a él, un estudiante mujeriego comienza una peligrosa investigación sobre el origen de algunas imágenes intrigantes que encontró en un rollo de película.</p>
+                    </div>
+                </div>
+            </li>
+            <li class="item-a">
+                <div class="showcase-box">
+                    <img src="img/cartelera5.jpg" />
+                    <div class="capa">
+                        <h3>Tres 60</h3>
+                        <p>Esperando impre-sionar a una mujer joven que le gusta a él, un estudiante mujeriego comienza una peligrosa investigación sobre el origen de algunas imágenes intrigantes que encontró en un rollo de película.</p>/
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+    </section>
+
+    <div class="flex main">
+        <div class="peliculas flex" id="app">
+
+
+        </div>
+    </div>
+    
+    <div class="abajo flex justify-between items-center">
+        <div class="icono">
+            <a><i class="fas fa-film fa-lg"></i></a>
+        </div>
+        <div class="icono">
+            <a><i class="far fa-arrow-alt-circle-down fa-lg"></i></a>
+        </div>
+        <div class="icono">
+            <a><i class="fas fa-circle-notch fa-lg"></i></a>
+        </div>
+        <div class="icono">
+            <a><i class="far fa-user fa-lg"></i></a>
+        </div>
+       
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <script>
+        $(document).ready(function() {
+            $('#autoWidth').lightSlider({
+                autoWidth: true,
+                loop: true,
+                onSliderLoad: function() {
+                    $('#autoWidth').removeClass('cS-hidden');
+                }
+            });
+        });
+
+    </script>
+</body>
+</html>

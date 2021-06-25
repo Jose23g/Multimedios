@@ -1,0 +1,535 @@
+body{
+font-family: sans-serif;
+background-color: white;;
+box-sizing: border-box;
+
+}
+.paginadetalle_wrap{
+    display: flex;
+    min-height: 100%;
+    height: auto;
+    position: relative;
+    top: 0;
+    flex: 1 1 auto;
+}
+.menuarriba{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top:0;
+    left: 0;
+    background-color: #00C9A7;
+    height: 64px;
+    width: 100%;
+    z-index: 10;
+}
+.contenidoheader{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+.submedia{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top:0;
+    left: 0;
+    width: 100%;
+    padding: 0 40px;
+}
+.nav_wrapper{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    align-items: center;
+    overflow: visible;   
+}
+.nav_wrapper ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+   
+}
+.nav_wrapper li:hover{
+    background: rgba(0,0,0,0.3);
+}
+
+.nav_wrapper li a{
+     display: flex;
+     padding: 12px 24px;
+     color: white;
+     text-decoration: none;
+     font-size: 16px;
+}
+.text-item{
+      display: inline-block;
+      margin-left: 2px;
+      margin-top: 6.4px;
+}
+.buscar{
+      padding-right: 10px;
+    }
+ #search{
+      width: 300px;
+      height: 40px;
+      background:#D7dADD;
+      border: none;
+      font-size: 16px;
+      float: right;
+      color: #FFFFFF;
+      padding-left: 10px;
+      border-radius: 13px;
+      margin-top: 6px;
+      overflow: hidden;
+      padding-right: 10px;
+    }
+ .icon{
+      float: right;
+      margin-top: 12px;
+      z-index: 1;
+      font-size: 24px;
+      color: #4f5b66;
+      display: block;
+      position: absolute;
+      right: 48px;
+}
+#main{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
+    
+}
+.contenidoGeneral{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    width: 100%;
+}
+.shortbar{
+    width: 100%;
+    height: 46px;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    position: relative;
+}
+.header_pelis{
+    
+    background-position: right -200px top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(https://images.moviemeter.nl/tmdb/t/p/w1920_and_h800_multi_faces/inJjDhCjfhh3RtrJWBmmDqeuSYC.jpg);
+}
+.bg{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-image: linear-gradient(to right, rgba(10.98%, 12.16%, 13.33%, 1.00) 150px, rgba(10.98%, 12.16%, 13.33%, 0.84) 100%);/*  background: #007476;se puede quitar*/
+}
+.columnaspeli{
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    z-index: 0;
+    box-sizing: border-box;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.imagenespeli{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.poster_wrapper{
+    border-width: 0px;
+    min-width: 300px;
+    width: 300px;
+    height: 450px;
+    overflow: hidden;
+}
+.poster{
+    display: block;
+    min-width: 300px;
+    width: 300px;
+    height: 450px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.image_content{
+    width: 100%;
+    height: 100%; 
+    min-width: 300px;
+    width: 300px;
+    height: 450px
+}
+.posteroriginal{
+    display: block;
+    width: 100%;
+    min-width: 100%;
+    height: 100%;
+    min-height: 100%;
+    border-width: 0px;
+    outline: none;
+}
+.datosPelicula{
+    display: flex;
+}
+.informacion{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: center;
+    box-sizing: border-box;
+    padding-left: 40px;
+}
+.titulos{
+    width: 100%;
+    margin-bottom: 24px;
+    display: flex;
+    flex-wrap: wrap;  
+    color: white;
+    
+}
+h2{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 2.2rem;
+    font-family: 'Source Sans Pro', sans-serif;
+     color: white;
+}
+.facts{
+    display: flex;
+     color: white;
+}
+.certification{
+    display: inline-flex;
+    white-space: nowrap;
+    align-items: center;
+    align-content: center;
+    padding: 0.06em 4px 0.15em 4px !important;
+    border: 1px solid rgba(255,255,255,0.6);
+    color: rgba(255,255,255,0.6);
+    line-height: 1;
+    border-radius: 2px;
+    margin-right: 7px;
+    font-family: 'Source Sans Pro', sans-serif;
+     color: white;
+}
+.generos{
+    padding-left: 4px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.duracion{
+    padding-left: 6px;
+    position: relative;
+    top: 0;
+    left: 10px;
+    border-radius: 8px;
+    background-color: #f0612c;
+    width: 4rem;
+    padding-top: 2.8px
+}
+.acciones{
+    margin-bottom: 20px;
+    width: 100%;
+    height: 68px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+ul.acciones li{
+    margin-right: 20px;
+}
+ul.acciones, li.tooltip{
+    padding: 3px 0;
+}
+ul.acciones li a{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;  
+}
+ul{
+    list-style-type: none;
+}
+li {
+    display: list-item;
+}
+.chart{
+    background: transparent;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    height: 68px;
+}
+.detalles{
+    width: 68px;
+    height: 68px;
+    display: inline-block;
+    transition: transform .2s;
+    transform: scale(1);
+}
+.outer_ring{
+    display: inline-block;
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    padding: 4px;
+    background-color: rgba(8, 28, 34, 0.9);
+}
+.puntuacion{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.porcentaje{
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.label{
+    color: #fff;
+    font-family: 'Consensus' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    font-size: 18px;
+}
+.canvas{
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0
+}
+.text{
+    font-weight: 700;
+    margin-left: 6px;
+    white-space: pre-line;
+     color: white;
+}
+
+li.tooltip a{
+    box-sizing: border-box;
+    background-image: radial-gradient(circle, #f9f9f9, #ecedef, #dee2e3, #d1d7d5, #c9cbc5);
+    border-radius: 50%;
+    width: 46px;
+    height: 46px;
+}
+.favorito{
+    color: red;
+    font-size: 20px;
+}
+.califica{
+    color: #e2e233;
+    font-size: 20px;
+}
+.descargar{
+     font-size: 20px;
+}
+.info{
+     width: 100%;
+}
+.info, .overview{
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+    line-height: 24px;
+    font-size: 1.3rem;
+}
+
+@media screen and (min-width:1000px){
+.calificacion{
+    display: none;
+}
+}
+
+@media screen and (max-width:800px){
+   .menuarriba{
+    display: none;
+
+}
+    .shortbar{
+        display: none;
+    }
+    #main{
+    margin-top: 0px;
+}
+
+    .header_pelis{
+    height: 260px;
+    width: 100%;
+    background-position: right -100px top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(https://images.moviemeter.nl/tmdb/t/p/w1920_and_h800_multi_faces/inJjDhCjfhh3RtrJWBmmDqeuSYC.jpg);
+    border-radius: 6px;
+    }
+    .bg{
+    background-image: linear-gradient(to right, rgb(28 31 34 / 52%) 150px, rgb(28 31 34 / 46%) 100%);
+    height: 260px;
+    width: 100%;
+        
+    }
+    
+    .columnaspeli{
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    z-index: 0;
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    }
+    .poster_wrapper{
+    border-width: 0px;
+    min-width: 128px;
+    width: 120px;
+    height: 180px;
+    top: 130px;
+    padding-left: 6px;
+    position: absolute;
+    margin-left: 10px;
+    }
+    .poster{
+        display: block;
+        min-width: 120px;
+        width: 120px;
+        height: 180px;
+        position: relative;
+    }
+    .image_content{
+        width: 120px;
+        height: 160px; 
+        min-width: 140px;
+        box-shadow: 10px 4px 12px -3px #000000;
+    }
+    .posteroriginal{
+        display: block;
+        width: 120px;
+        min-width: 120px;
+        height: 150px;
+        min-height: 180;
+
+    }
+    .datospelicula{
+        position: relative;
+        top:200px;
+    }
+    .informacion{
+    padding-left: 24px;
+    position: absolute;
+    top: 300px;
+        
+}
+    
+h2{
+    width: 100%;
+    margin-left: -10px;
+    font-size: 1.2rem;
+    color: black;
+    
+}
+    .facts{
+    width: 100%; 
+    position: absolute;
+    top: 26px; 
+    font-size: 12px;
+    }
+    .generos{
+       margin-left: -10px;
+       color: #c1c7c5;
+    }
+    .certification{
+    display: none;
+    }
+    .duracion{
+    width: 3rem;
+    padding-top: 3px;
+    top: -20px;
+    left: 28px;
+    padding-left: 4px;
+    }
+    .acciones{
+        position: relative;
+        top: -44px;
+        margin-bottom: 12px;
+        left: 226px;
+    }
+    .chart{
+        display: none;
+    }
+    ul.acciones li{
+    margin-right: 2px;
+}
+    li.tooltip a{
+    background-image: radial-gradient(circle, #f9f9f9, #ecedef, #dee2e3, #d1d7d5, #a9e03a);
+    border-radius: 50%;
+    width: 26px;
+    height: 26px;
+}
+    .outer_ring{
+        display: none;
+    }
+    .text{
+        display: none;
+    }
+    .favorito{
+    color: rgba(60, 59, 54, 0.29);
+    font-size: 14px;
+}
+    .califica{
+    display: none;
+}
+    .descargar{
+     font-size: 14px;
+}
+    .info{
+    line-height: 16px;
+    font-size: 0.8rem;
+    position: relative;
+    top: -86px; 
+    
+    }
+    h3{
+        display: none;
+    }
+    .overview{
+     line-height: 18px;
+    }
+    p{
+    top: 100px; 
+    margin-left: -10px;
+    font-size: 0.9rem;
+    color: rgba(129, 124, 124, 0.9);
+    }
+    .calificacion{
+        position: absolute;
+        top: 46px;
+        color: orange;
+        font-size: 18px;
+        left: 10px;
+        margin-right: 4px;
+        margin-left: 4px;
+    
+    }
+    
+}
+
+

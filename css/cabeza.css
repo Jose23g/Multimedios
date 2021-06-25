@@ -1,0 +1,91 @@
+.Cabecera{
+    padding: 3px 55px 3px 55px;
+    background-color: white;
+}
+
+/*Inicio de la cabecera*/
+.nav-escritorio a{
+    margin-left: 4rem;
+    color: grey;
+    transition: .3s;
+}
+
+.nav-escritorio ul{
+    list-style: none;
+}
+
+.nav-escritorio ul li{
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+ul li:hover a{
+    padding-left: 20px;
+    color: black;
+    border-left: 1px solid rgb(30, 220, 100);
+}
+
+.menu_movil{
+    display: none;
+}
+/*Final de la cabecera*/
+
+.flex{
+    display: flex;
+}
+
+.flex-col{
+	flex-flow: column;
+}
+
+.justify-between{
+
+	justify-content: space-between;
+}
+
+.justify-center{
+
+	justify-content: center;
+}
+
+.items-center{
+	align-items: center;
+}
+
+a{
+    text-decoration: none;
+    display: flex;
+    cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 820px){
+    .Cabecera{
+        margin: 1px;
+        padding: 2px;
+        background-color: white;
+    }
+    .opciones{
+		margin: 13px;
+        padding: 6px;
+	}
+    .seleccion{
+        display: block;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .seleccion option{
+        border-radius: 12px;
+    }
+
+    .menu_movil{
+        display: block;  
+    }
+    
+    .nav-escritorio{
+        display: none;
+    }
+}
