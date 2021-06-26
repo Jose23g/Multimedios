@@ -122,7 +122,7 @@ box-sizing: border-box;
 }
 .header_pelis{
     
-    background-position: right -200px top;
+    background-position: right -100px top;
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url(https://images.moviemeter.nl/tmdb/t/p/w1920_and_h800_multi_faces/inJjDhCjfhh3RtrJWBmmDqeuSYC.jpg);
@@ -220,22 +220,29 @@ h2{
     line-height: 1;
     border-radius: 2px;
     margin-right: 7px;
+    height: 1rem;
     font-family: 'Source Sans Pro', sans-serif;
      color: white;
 }
 .generos{
+    display: inline-flex;
+    height: 1rem;
+    width: 12rem;
     padding-left: 4px;
     font-family: 'Source Sans Pro', sans-serif;
 }
 .duracion{
     padding-left: 6px;
     position: relative;
-    top: 0;
-    left: 10px;
+    top: 124px;
+    left: -240px;
     border-radius: 8px;
     background-color: #f0612c;
     width: 4rem;
-    padding-top: 2.8px
+    height: 1.2rem;
+    padding-top: 2px
+
+   
 }
 .acciones{
     margin-bottom: 20px;
@@ -320,9 +327,9 @@ li {
 }
 .text{
     font-weight: 700;
-    margin-left: 6px;
+    margin-left: 20px;
     white-space: pre-line;
-     color: white;
+    color: white;
 }
 
 li.tooltip a{
@@ -374,8 +381,8 @@ li.tooltip a{
     .header_pelis{
     height: 260px;
     width: 100%;
-    background-position: right -100px top;
-    background-size: cover;
+    background-position: right -200px top;
+    background-size: contain;
     background-repeat: no-repeat;
     background-image: url(https://images.moviemeter.nl/tmdb/t/p/w1920_and_h800_multi_faces/inJjDhCjfhh3RtrJWBmmDqeuSYC.jpg);
     border-radius: 6px;
@@ -442,7 +449,7 @@ li.tooltip a{
 h2{
     width: 100%;
     margin-left: -10px;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     color: black;
     
 }
@@ -453,7 +460,7 @@ h2{
     font-size: 12px;
     }
     .generos{
-       margin-left: -10px;
+       margin-left: -12px;
        color: #c1c7c5;
     }
     .certification{
@@ -461,17 +468,17 @@ h2{
     }
     .duracion{
     width: 3rem;
-    padding-top: 3px;
-    top: -20px;
-    left: 28px;
-    padding-left: 4px;
+    padding-top: 1px;
+    top: 28px;
+    left: -36px;
+    padding-left: 8px;
+    height: 0.9rem;
     }
     .acciones{
         position: relative;
         top: -44px;
         margin-bottom: 12px;
-        left: 226px;
-    }
+        left: 218px;    }
     .chart{
         display: none;
     }
