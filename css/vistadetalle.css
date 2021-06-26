@@ -102,7 +102,7 @@ box-sizing: border-box;
     flex-wrap: wrap;
     align-content: flex-start;
     justify-content: center;
-    
+
 }
 .contenidoGeneral{
     display: flex;
@@ -121,7 +121,11 @@ box-sizing: border-box;
     position: relative;
 }
 .header_pelis{
-
+    
+    background-position: right -200px top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(https://images.moviemeter.nl/tmdb/t/p/w1920_and_h800_multi_faces/inJjDhCjfhh3RtrJWBmmDqeuSYC.jpg);
 }
 .bg{
     display: flex;
@@ -366,7 +370,6 @@ li.tooltip a{
     #main{
     margin-top: 0px;
 }
-
     .header_pelis{
     height: 260px;
     width: 100%;

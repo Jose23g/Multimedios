@@ -6,7 +6,8 @@ window.onload = function eligiendo(){
       if(media == "tv"){
 
         axios.get('https://api.themoviedb.org/3/tv/'+id+'?api_key=c94ae96d76db457ccdb3767fef477a02')
-      .then(function (response) {
+      .then(function(response) 
+      {
         // handle success
         console.log(response.data);
         document.querySelector("#titulo").innerHTML = "<h2> "+response.data.name+"</h2>";
