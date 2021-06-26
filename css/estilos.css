@@ -15,7 +15,7 @@ html{
 body{
     
     flex-direction: column;
-    background-color: #2d53da;
+    background-color: #EEF0F7;
     margin: 0;
     padding: 0;
 }
@@ -48,21 +48,32 @@ a{
 .items-center{
 	align-items: center;
 }
+#main{
+    padding-bottom: 40px;
+    background-color: #F3F9FF;
+    height: 360px;
+}
 
 .showcase-box{
     position: relative;
-    width: 350px;
-    height: 200px;
-    box-shadow: 0 1px 11px -2px black;
-    border-radius:  10px;
-    margin: 0px 20px 10px 20px;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 1px 12px -2px black;
+    border-radius:  12px;
+    margin: 0px 0px 0px 0px;
     overflow: hidden;
 
 }
+.item-a{
+    padding-left: 8px;
+    padding-right: 8px;
+}
 
 .showcase-box img{
-    width: 100%;
-    height: 100%;
+    min-width: 200px;
+    width: 200px;
+    min-height: 250px;
+    height: 258px;
     object-fit: cover;
     object-position: top;
    
@@ -96,13 +107,61 @@ li .showcase-box:hover > .capa{
     color: #1a1a1a;
 }
 /*Final del slider de peliculas*/
+/*Inicio de la cabecera*/
+.nav-escritorio a{
+    margin-left: 4rem;
+    color: grey;
+    transition: .3s;
+}
+
+.nav-escritorio ul{
+    list-style: none;
+}
+
+.nav-escritorio ul li{
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+ul li:hover a{
+    padding-left: 20px;
+    color: black;
+    border-left: 1px solid rgb(30, 220, 100);
+}
+
+.Cabecera{
+    padding: 3px 55px 3px 55px;
+    background-color: white;
+}
 
 
+.menu_movil{
+    display: none;
+}
+/*Final de la cabecera*/
+.populares{
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    color: #1a1a1a;
+    width: 400px;
+    padding-left: 10px;
+    padding-bottom: 16px;
+    margin-top: 16px;
+    margin-bottom: 6px;
+    position: absolute;
+}
 
 .peliculas{
+    padding: 1.4rem;
     flex-wrap: wrap;
-    padding: 2rem;
     justify-content: space-around;
+    position: relative;
+    margin-top: 16px;
+    top:40px;
 }
 
 .pelis{
@@ -112,7 +171,7 @@ li .showcase-box:hover > .capa{
     width: 30rem;
     height: 10rem; 
     padding: 1rem;
-    margin: 2rem;
+    margin: 1.4rem;
 }
 
 .cartelera{
@@ -164,18 +223,20 @@ li .showcase-box:hover > .capa{
 
 .info-peli{
    padding-left: 1rem;
-    text-align:justify;
-    
+   text-align:justify;
+   color: black;
     }
 
 .btn-dura{
     font-size: 12px;
     border-radius: 10px;
 	color: white;
+    top: -26px;
+    left: 100px;
 	background-color: orange;
 	border-color: orange;
 	border: solid;
-    margin-bottom: 2px;
+    position: relative;
     }
 
 .circulo{
@@ -183,6 +244,9 @@ li .showcase-box:hover > .capa{
 }
 
 .abajo{
+    display: none;
+}
+.icono{
     display: none;
 }
 
@@ -197,9 +261,23 @@ br{
     }
     
     #main{
-        padding: 1px;  
+        padding: 1px;
+        height: 300px;  
     }
-    
+    .showcase-box{
+        width: 88%;
+        height: 100%;
+    }
+    .item-a{
+        padding-left:4 px;
+        padding-right: 4px;
+    }     
+    .showcase-box img { 
+    min-width: 150px;
+    width: 140px;
+    min-height: 180px;
+    height: 180px;
+    }
     .peliculas{
         flex-flow: column;
         padding: 1px;
@@ -212,15 +290,18 @@ br{
         letter-spacing: 1px;
         font-weight: 100;
     }
-    
-    .showcase-box{
-        max-width: 250px;
-        height: 180px;
-        margin: 10px;
+    .capa{
+        font-size: 14px;
+        line-height: 15px;
+        letter-spacing: 1px;
+        font-weight: 100;
     }
     
-   
-   
+    
+    .opciones{
+		margin: 13px;
+        padding: 6px;
+	}
     .buscar{
         margin: 13px; 
          padding: 6px;
@@ -256,21 +337,20 @@ br{
     }
     
     .peli-descripcion p{
-        margin-right: 1px;
-        margin-top: 0;
-        padding-top: 2px;
+        margin-right: 4px;
+        margin-left: 6px;
+        margin-top: 10px;
+        padding-top: 1px;
         font-family: 'Poppins', sans-serif;
-        line-height : 18px;
+        line-height: 20px;
         font-size: 13px;
-        letter-spacing: 1px;
-        text-overflow: clip;
+        letter-spacing: 0.4px;
+        text-align: start;
     }
     
     .peli-descripcion{
-        width: auto;
-        max-height: 50px;
-        overflow: hidden;
-        text-overflow: ellipsis;
+        width: 220px;
+        max-height: 140px;
 
     }
     
@@ -307,7 +387,12 @@ br{
         font-size: 14px;
         font-family: 'Roboto', sans-serif;
     }
-    
+    .Cabecera{
+        margin: 1px;
+        padding: 2px;
+        width: 100%;
+        background-color: white;
+    }
    
     
     .cartelera{
@@ -329,9 +414,22 @@ br{
         width: auto;
         background-color: #FAF8FF; 
     }
+    .seleccion{
+        display: block;
+        font-family: 'Roboto', sans-serif;
+    }
 
+    .seleccion option{
+        border-radius: 12px;
+    }
 
-
+    .menu_movil{
+        display: block;  
+    }
+    
+    .nav-escritorio{
+        display: none;
+    }
     .display{
         display: none;
     }
