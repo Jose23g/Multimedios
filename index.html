@@ -37,7 +37,7 @@ $(function(){
         <ul id="autoWidth" class="cs-hidden">
             <li class="item-a">
                 <div class="showcase-box">
-                    <img src="img/cartelera1.jpg" />
+                    <img src="img/cartelera1.jpg"/>
                     <div class="capa">
                         <h3>Tres 60</h3>
                         <p>Esperando impresionar a una mujer joven que le gusta a él, un estudiante mujeriego comienza una peligrosa investigación sobre el origen de algunas imágenes intrigantes que encontró en un rollo de película.</p>
@@ -143,17 +143,35 @@ $(function(){
         </div>
        
     </div> 
+    
     <script>
-        $(document).ready(function() {
-            $('#autoWidth').lightSlider({
-                autoWidth: true,
-                loop: true,
-                onSliderLoad: function() {
-                    $('#autoWidth').removeClass('cS-hidden');
+              $(document).ready(function() {
+        $('#autoWidth').lightSlider({
+            item:4,
+            loop:false,
+            slideMove:2,
+            easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
+            speed:600,
+            responsive : [
+                {
+                    breakpoint:800,
+                    settings: {
+                        item:2,
+                        slideMove:1,
+                        slideMargin:6,
+                      }
+                },
+                {
+                    breakpoint:480,
+                    settings: {
+                        item:2,
+                        slideMove:1
+                      }
                 }
-            });
-        });
-
+            ]
+        });  
+      });
     </script>
+
 </body>
 </html>

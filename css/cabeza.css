@@ -1,9 +1,16 @@
+
+ .menu_movil{
+    display: none;  
+}
 .Cabecera{
     padding: 3px 55px 3px 55px;
     background-color: white;
+    
+}
+.categorias{
+    display: none;
 }
 
-/*Inicio de la cabecera*/
 .nav-escritorio a{
     margin-left: 4rem;
     color: grey;
@@ -26,11 +33,6 @@ ul li:hover a{
     color: black;
     border-left: 1px solid rgb(30, 220, 100);
 }
-
-.menu_movil{
-    display: none;
-}
-/*Final de la cabecera*/
 
 .flex{
     display: flex;
@@ -85,5 +87,8 @@ a{
     
     .nav-escritorio{
         display: none;
+    }
+    .categorias{
+        display: block;
     }
 }
