@@ -125,7 +125,6 @@ box-sizing: border-box;
     background-position: right -200px top;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url(https://images.moviemeter.nl/tmdb/t/p/w1920_and_h800_multi_faces/inJjDhCjfhh3RtrJWBmmDqeuSYC.jpg);
 }
 .bg{
     display: flex;
@@ -376,7 +375,6 @@ li.tooltip a{
     background-position: right -100px top;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url(https://images.moviemeter.nl/tmdb/t/p/w1920_and_h800_multi_faces/inJjDhCjfhh3RtrJWBmmDqeuSYC.jpg);
     border-radius: 6px;
     }
     .bg{
