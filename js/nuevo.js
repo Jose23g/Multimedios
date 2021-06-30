@@ -6,13 +6,14 @@ window.onload = function eligiendo(){
       if(media == "tv"){
 
         axios.get('https://api.themoviedb.org/3/tv/'+id+'?api_key=c94ae96d76db457ccdb3767fef477a02')
-      .then(function (response) {
+      .then(function(response) 
+      {
         // handle success
         console.log(response.data);
         document.querySelector("#titulo").innerHTML = "<h2> "+response.data.name+"</h2>";
         document.querySelector(".posteroriginal").src = "https://image.tmdb.org/t/p/w500"+response.data.poster_path;
-        document.querySelector(".header_pelis").style.background = "https://image.tmdb.org/t/p/w500"+response.data.poster_path;
-        document.querySelector(".header_pelis").style.background = "url('https://image.tmdb.org/t/p/original/"+response.data.backdrop_path+"')";
+        document.querySelector(".header_pelis").style.background = "url('https://image.tmdb.org/t/p/original/"+response.data.backdrop_path+"') center";
+        document.querySelector(".header_pelis").style.backgroundSize = "cover";
         document.querySelector(".descripcionpeli").textContent = response.data.overview;
         document.querySelector(".label").textContent = response.data.vote_average+"%";
 
@@ -40,7 +41,8 @@ window.onload = function eligiendo(){
         console.log(response.data);
         document.querySelector("#titulo").innerHTML = "<h2>"+response.data.original_title+"</h2>";
         document.querySelector(".posteroriginal").src = "https://image.tmdb.org/t/p/w500"+response.data.poster_path;
-        document.querySelector(".header_pelis").style.background = "url('https://image.tmdb.org/t/p/original/"+response.data.backdrop_path+"')";
+        document.querySelector(".header_pelis").style.background = "url('https://image.tmdb.org/t/p/original/"+response.data.backdrop_path+"') center";
+        document.querySelector(".header_pelis").style.backgroundSize = "cover";
         document.querySelector(".descripcionpeli").textContent = response.data.overview;
         document.querySelector(".label").textContent = response.data.vote_average+"%";
 
