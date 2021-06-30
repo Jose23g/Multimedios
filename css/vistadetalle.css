@@ -125,16 +125,21 @@ box-sizing: border-box;
     background-position: right -200px top;
     background-size: cover;
     background-repeat: no-repeat;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    height: 620px;
 }
 .bg{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    background-image: linear-gradient(to right, rgba(10.98%, 12.16%, 13.33%, 1.00) 150px, rgba(10.98%, 12.16%, 13.33%, 0.84) 100%);/*  background: #007476;se puede quitar*/
+    background-image: linear-gradient(to right, rgb(10 10 10 / 100%) 150px, rgb(31 30 30 / 50%) 100%);
+    height: 100%;
 }
 .columnaspeli{
     width: 100%;
-    padding-top: 30px;
+    padding-top: 50px;
     padding-bottom: 30px;
     z-index: 0;
     box-sizing: border-box;
@@ -219,22 +224,29 @@ h2{
     line-height: 1;
     border-radius: 2px;
     margin-right: 7px;
+    height: 1rem;
     font-family: 'Source Sans Pro', sans-serif;
      color: white;
 }
 .generos{
+    display: inline-flex;
+    height: 1rem;
+    width: 12rem;
     padding-left: 4px;
     font-family: 'Source Sans Pro', sans-serif;
 }
 .duracion{
     padding-left: 6px;
     position: relative;
-    top: 0;
-    left: 10px;
+    top: 124px;
+    left: -240px;
     border-radius: 8px;
     background-color: #f0612c;
     width: 4rem;
-    padding-top: 2.8px
+    height: 1.2rem;
+    padding-top: 2px
+
+   
 }
 .acciones{
     margin-bottom: 20px;
@@ -318,9 +330,9 @@ li {
 }
 .text{
     font-weight: 700;
-    margin-left: 6px;
+    margin-left: 20px;
     white-space: pre-line;
-     color: white;
+    color: white;
 }
 
 li.tooltip a{
@@ -369,17 +381,14 @@ li.tooltip a{
     margin-top: 0px;
 }
     .header_pelis{
+    border-radius: 6px;
     height: 260px;
     width: 100%;
-    background-position: right -100px top;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 6px;
     }
     .bg{
-    background-image: linear-gradient(to right, rgb(28 31 34 / 52%) 150px, rgb(28 31 34 / 46%) 100%);
-    height: 260px;
+    background-image: linear-gradient(to right, rgb(28 32 34 / 102%) -150px, rgb(28 31 34 / 46%) 100%);
     width: 100%;
+    height: 260px
         
     }
     
@@ -438,7 +447,7 @@ li.tooltip a{
 h2{
     width: 100%;
     margin-left: -10px;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     color: black;
     
 }
@@ -449,7 +458,7 @@ h2{
     font-size: 12px;
     }
     .generos{
-       margin-left: -10px;
+       margin-left: -12px;
        color: #c1c7c5;
     }
     .certification{
@@ -457,17 +466,17 @@ h2{
     }
     .duracion{
     width: 3rem;
-    padding-top: 3px;
-    top: -20px;
-    left: 28px;
-    padding-left: 4px;
+    padding-top: 1px;
+    top: 28px;
+    left: -36px;
+    padding-left: 8px;
+    height: 0.9rem;
     }
     .acciones{
         position: relative;
         top: -44px;
         margin-bottom: 12px;
-        left: 226px;
-    }
+        left: 218px;    }
     .chart{
         display: none;
     }
@@ -513,7 +522,7 @@ h2{
     top: 100px; 
     margin-left: -10px;
     font-size: 0.9rem;
-    color: rgba(129, 124, 124, 0.9);
+    color:black;
     }
     .calificacion{
         position: absolute;

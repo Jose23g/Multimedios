@@ -12,7 +12,7 @@ window.onload = function eligiendo(){
         console.log(response.data);
         document.querySelector("#titulo").innerHTML = "<h2> "+response.data.name+"</h2>";
         document.querySelector(".posteroriginal").src = "https://image.tmdb.org/t/p/w500"+response.data.poster_path;
-        document.querySelector(".header_pelis").style.background = "url('https://image.tmdb.org/t/p/original/"+response.data.backdrop_path+"') center";
+        document.querySelector(".header_pelis").style.background = "url('https://image.tmdb.org/t/p/original/"+response.data.backdrop_path+"') center right no-repeat";
         document.querySelector(".header_pelis").style.backgroundSize = "cover";
         document.querySelector(".descripcionpeli").textContent = response.data.overview;
         document.querySelector(".label").textContent = response.data.vote_average+"%";
@@ -41,7 +41,7 @@ window.onload = function eligiendo(){
         console.log(response.data);
         document.querySelector("#titulo").innerHTML = "<h2>"+response.data.original_title+"</h2>";
         document.querySelector(".posteroriginal").src = "https://image.tmdb.org/t/p/w500"+response.data.poster_path;
-        document.querySelector(".header_pelis").style.background = "url('https://image.tmdb.org/t/p/original/"+response.data.backdrop_path+"') center";
+        document.querySelector(".header_pelis").style.background = "url('https://image.tmdb.org/t/p/original/"+response.data.backdrop_path+"') top center no-repeat no-repeat";
         document.querySelector(".header_pelis").style.backgroundSize = "cover";
         document.querySelector(".descripcionpeli").textContent = response.data.overview;
         document.querySelector(".label").textContent = response.data.vote_average+"%";
