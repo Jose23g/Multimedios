@@ -269,6 +269,7 @@ br{
         flex-flow: column;
         padding: 1px;
         width: 100%;
+        overflow: hidden;
     }
     
     .capa{

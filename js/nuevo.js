@@ -1,8 +1,7 @@
-
-window.onload = function eligiendo(){
-    var id = parametros("id");
-    var media = parametros("media");
-
+const geturl = new URLSearchParams(window.location.search);
+id = geturl.get('id');
+media = geturl.get('media');
+   
       if(media == "tv"){
 
         axios.get('https://api.themoviedb.org/3/tv/'+id+'?api_key=c94ae96d76db457ccdb3767fef477a02')
@@ -68,11 +67,4 @@ window.onload = function eligiendo(){
       });
 
       }
-}
-
-
-function parametros(nombreparametro){
-  let direccion = new URLSearchParams(window.location.search);
-  return direccion.get(nombreparametro);
-}
 
