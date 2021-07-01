@@ -1,8 +1,11 @@
+/*! lightslider - v1.1.6 - 2016-10-25
+* https://github.com/sachinchoolur/lightslider
+* Copyright (c) 2016 Sachin N; Licensed MIT */
 (function ($, undefined) {
     'use strict';
     var defaults = {
         item: 3,
-        autoWidth: true,
+        autoWidth: false,
         slideMove: 1,
         slideMargin: 10,
         addClass: '',
@@ -11,7 +14,7 @@
         cssEasing: 'ease', //'cubic-bezier(0.25, 0, 0.25, 1)',
         easing: 'linear', //'for jquery animation',//
         speed: 400, //ms'
-        auto: false,
+        auto: true,
         pauseOnHover: false,
         loop: false,
         slideEndAnimation: true,
