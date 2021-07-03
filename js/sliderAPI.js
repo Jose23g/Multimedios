@@ -8,7 +8,7 @@ axios.get('https://api.themoviedb.org/3/tv/popular?api_key=c94ae96d76db457ccdb37
   populares.forEach(element => {
       template += 
 
-         "<li class=\"item-a\">"+
+         "<li class=\"item-Ea\">"+
              "<div class=\"showcase-box\">"+
                  "<img src=\"https://image.tmdb.org/t/p/w500"+element.poster_path+"\">"+
                  "<div class=\"capa\">"+
