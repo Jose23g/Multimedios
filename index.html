@@ -3,38 +3,32 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="css/lightslider.css">
     <link rel="stylesheet" href="iconos/css/all.css">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/cabeza.css">
-    <link rel="stylesheet" href="css/lightslider.css">
+    <link rel="stylesheet" href="css/estilos.css">  
+
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="js/JQuery3.3.1.js"></script>
-    
+    <script src="js/sliderAPI.js"></script>
+    <script src="js/consumirAPI.js"></script>
+    <script src="js/lightslider.js"></script>
     <title>Proyecto Personal</title>
 </head>
 
 <body>
     
-    <!--Navigation bar-->
-<div class="flex Cabecera justify-between items-center">
-    
-</div>
+   
+    <div class="flex Cabecera justify-between items-center"></div>
 
-<script>
-$(function(){
-  $(".Cabecera").load("cabecera.html");
-});
-</script>
-<!--end of Navigation bar-->
-<script src="js/consumirAPI.js"></script>
-<script src="js/sliderAPI.js"></script>
-    
     <section id="main">
 
         <h1 class="showcase-heading">Proximos estrenos</h1>
         <ul id="autoWidth" class="cs-hidden">
             <li class="item-a">
+                <img>
                 <div class="showcase-box">
                     <div class="capa">
                         <h3></h3>
@@ -50,54 +44,45 @@ $(function(){
         <h1 class="populares">Tendencias de la semana</h1>
         <div class="peliculas flex" id="app">
         </div>
-    </div>
-    
-    <div class="abajo flex justify-between items-center">
-        <div class="icono">
-            <a><i class="fas fa-film fa-lg"></i></a>
-        </div>
-        <div class="icono">
-            <a><i class="far fa-arrow-alt-circle-down fa-lg"></i></a>
-        </div>
-        <div class="icono">
-            <a><i class="fas fa-circle-notch fa-lg"></i></a>
-        </div>
-        <div class="icono">
-            <a><i class="far fa-user fa-lg"></i></a>
-        </div>
-       
     </div> 
-    
-    
-    <script src="js/lightslider.js"></script>
     <script>
-             $(document).ready(function() {
-        $('#autoWidth').lightSlider({
-            gallery:true,
-            item:4,
-            loop:false,
-            slideMove:2,
-            easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
-            speed:600,
-            responsive : [
-                {
-                    breakpoint:800,
-                    settings: {
-                        item:2,
-                        slideMove:1,
-                        slideMargin:6,
-                      }
-                },
-                {
-                    breakpoint:480,
-                    settings: {
-                        item:2,
-                        slideMove:1
-                      }
-                }
-            ]
-        });  
-      });
+             $().ready(function() {
+                setTimeout(function(){
+                    $('#autoWidth').lightSlider({
+                    item:4,
+                    loop:true,
+                    slideMove:2,
+                    easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
+                    speed:600,
+                    responsive : 
+                    [
+                        {
+                            breakpoint:800,
+                            settings: 
+                            {
+                                item:2,
+                                slideMove:1,
+                                slideMargin:6,
+                            }
+                        },
+                        {
+                            breakpoint:480,
+                            settings: 
+                            {
+                                item:2,
+                                slideMove:1
+                            }
+                        }   
+                    ]
+                });
+                },500)
+                  
+            });
+    </script>
+    <script>
+        $(function(){
+          $(".Cabecera").load("cabecera.html");
+        });
     </script>
 </body>
 </html>
