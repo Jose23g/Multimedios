@@ -248,7 +248,8 @@ br{
    
     #main{
         padding: 1px;
-        height: 300px;  
+        height: 300px;
+
        
     }
     .showcase-box{
@@ -278,13 +279,6 @@ br{
         letter-spacing: 1px;
         font-weight: 100;
     }
-    .capa{
-        font-size: 14px;
-        line-height: 15px;
-        letter-spacing: 1px;
-        font-weight: 100;
-    }
-    
     
     .opciones{
 		margin: 13px;
@@ -331,13 +325,14 @@ br{
         padding-top: 1px;
         font-family: 'Poppins', sans-serif;
         line-height: 20px;
-        font-size: 13px;
+        font-size: 11px;
         letter-spacing: 0.4px;
         text-align: start;
     }
     
     .peli-descripcion{
-        width: 220px;
+        width: 120px;
+        max-height: 200px;
        
     }
     
