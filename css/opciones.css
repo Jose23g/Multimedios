@@ -1,0 +1,194 @@
+body{
+    font-family: sans-serif;
+    background-color: #EEF0F7;;
+    box-sizing: border-box;
+    
+    }
+    .trending{
+      position: relative;
+      margin: 10px 12px 4px 2px;
+      top: 80px;
+      height: 500px;
+      width: 100%;
+      background-color:aliceblue;
+    }
+    /*Contenedor Slider*/
+    .Estrenos{
+       margin-bottom: 30px; 
+    }
+    .contenedorslider{
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+    .flecha-izquierda, .flecha-derecha {
+        position: absolute;
+        border: none;
+        background: rgba(0,0,0,0.3);
+        font-size: 40px;
+        height: 20%;
+        top: calc(60% - 25%);
+        line-height: 40px;
+        width: 50px;
+        color: white;
+        cursor: pointer;
+        z-index: 500;
+        transition: .2s ease all;  
+    }
+    .flecha-izquierda:hover, .flecha-derecha:hover{
+      background: rgba(0,0,0,.6);  
+    }
+    .flecha-izquierda{
+       left: 0; 
+    }
+    .flecha-derecha {
+       right: 0; 
+    }
+    /*Contendor Carrusel*/
+    .contenedor-carrusel{
+        width: 100%;
+        padding: 20px 0;
+        overflow: hidden;
+        scroll-behavior: smooth;
+    }
+    .carrusel{
+        display: flex;
+        flex-wrap: nowrap;
+        margin-left: 20px;
+    }
+    .peliculas{
+        min-width: 20%;
+        transition: .3s ease all;
+        box-shadow: 5px5px 10px rgba(0,0,0,.3);
+        margin-left: 4px;
+        margin-right: 4px;
+        margin-top: 20px;
+    }
+    .peliculas img{
+        min-width: 200px;
+        width: 232px;
+        min-height: 300px;
+        height: 250px;
+        object-fit: cover;
+        object-position: top;
+        vertical-align: top;
+    }
+    .peliculas img:hover{
+        transform: scale(1.1);
+        transform-origin: center;
+    }
+    .TituloInicial{
+        padding: 10px;
+        margin-bottom: 10px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        color: #1a1a1a;
+    }
+    .informacion{
+        width:93%; 
+        height: 110px;
+        box-shadow: 0 1px 4px -2px black;
+        background-color: white;
+    
+    }
+    h2{
+        font-size: 18px;
+        margin-top: 4px;
+        width: 100%;
+        padding-left: 6px;
+        top: 10px;
+        position: relative;
+    }
+    .generos{
+        padding-left: 4px;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 12px;
+        position: relative;
+        top: -4px;
+    }
+    .duracion{
+        font-size: 13px;
+        padding-left: 2px;
+        margin-left: 20px;
+        position: relative;
+        top: 18px;
+        left: -10px;
+        border-radius: 8px;
+        background-color: rgba(223, 209, 234, 0.53);
+        padding-top: 2.8px;
+        padding-right: 4px;
+        padding-bottom: 2px;
+    }
+        .iconos{
+        bottom:1px;
+        left: 150px;
+        position: relative;
+        color: #c1cdd6;
+        }
+        .descarga{
+        position: relative;
+        bottom: 17px;
+        left: 180px;
+        color: #c1cdd6;   
+        }
+      .calificacion{
+            position: relative;
+            top: -37px;
+            color: orange;
+            font-size: 18px;
+            left: 70px;
+            margin-right: 4px;
+            margin-left: 4px;
+        
+        }
+    @media screen and (max-width: 800px){
+    .contenedor-carrusel{
+        width: 100%;
+    }
+    
+    .peliculas{
+        min-width: 14%;
+         margin-top: 10px;
+    }
+    .peliculas img{
+        min-width: 220px;
+        width: 200px;
+        min-height: 300px;
+        height: 250px;
+        object-fit: cover;
+        object-position: top;
+        vertical-align: top;
+    }
+    .peliculas img:hover{
+        transform: scale(1.1);
+        transform-origin: center;
+    }
+        .TituloInicial{
+        padding: 10px;
+        margin-bottom: 2px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        font-size: 1.1rem;
+        color: #1a1a1a;
+    }
+    .informacion{
+        width:100%; 
+    
+    }
+    .iconos{
+        bottom:1px;
+        left: 150px;
+        position: relative;
+        color: #c1cdd6;
+        }
+        .descarga{
+        position: relative;
+        bottom: 17px;
+        left: 180px;
+        color: #c1cdd6;   
+        }
+    
+    }
+    
