@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+
+<head>  
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0" />
+    <meta charset="UTF-8"/>
+    
+    <link rel="stylesheet" type="text/css" href="./css/modern-normalize.css">
+    <link rel="stylesheet" type="text/css" href="./css/opciones.css">
+    <link rel="stylesheet" href="iconos/css/all.css">
+    <link rel="stylesheet" href="css/lightslider.css">
+
+
+
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    
+   
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/JQuery3.3.1.js"></script>
+    <script src = "js/nuevo.js" type = "text/javascript"></script>
+    
+    
+    <title>Peliculas Online</title>
+</head>
+
+<body>
+<!--Navigation bar-->
+<div class="flex Cabecera justify-between items-center"></div>
+<main>
+    <div class="Estrenos">
+        <h1 class="TituloInicial">Proximos estrenos</h1>
+        <div class="indicadores">
+        
+        </div>
+        <div class="contenedorslider">
+            <button role="button" id="flecha-izquierda" class="flecha-izquierda">
+            <i class="fas fa-angle-left"></i>
+            </button>
+            <div class="contedor-carrusel">
+                <div class="carrusel">
+                <div class="peliculas">
+                    <img src="img/cartelera2.jpg" />
+                      <div class="informacion">
+                        <h2>Titulo de la Pelicula</h2>
+                        <span class="generos"><a>Ficción</a>,&nbsp;<a>Ciencia-Ficción</a>,&nbsp;<a>Aventura</a> </span>
+                        <span class="duracion">172min </span>
+                         <div class="iconos">
+                        <a><i class="far fa-star fa-sm"></i></a>
+                    </div>  
+                    <div class="descarga">
+                        <a><i class="far fa-arrow-alt-circle-down "></i></a>
+                        </div> 
+                         <div class="calificacion">
+                            <i class="fa fa-star" aria-hidden="true"></i>&nbsp;9.0</div>
+                    </div>
+                    </div>
+                       <div class="peliculas">
+                    <img src="img/cartelera3.jpg" />
+                      <div class="informacion">
+                        <h2>Titulo de la Pelicula</h2>
+                        <span class="generos"><a>Ficción</a>,&nbsp;<a>Ciencia-Ficción</a>,&nbsp;<a>Aventura</a> </span>
+                        <span class="duracion">172min </span>
+                         <div class="iconos">
+                        <a><i class="far fa-star fa-sm"></i></a>
+                    </div>  
+                    <div class="descarga">
+                        <a><i class="far fa-arrow-alt-circle-down "></i></a>
+                        </div> 
+                         <div class="calificacion">
+                            <i class="fa fa-star" aria-hidden="true"></i>&nbsp;9.0</div>
+                    </div>
+                    </div>
+                    
+                       <div class="peliculas">
+                    <img src="img/cartelera4.jpg" />
+                      <div class="informacion">
+                        <h2>Titulo de la Pelicula</h2>
+                        <span class="generos"><a>Ficción</a>,&nbsp;<a>Ciencia-Ficción</a>,&nbsp;<a>Aventura</a> </span>
+                        <span class="duracion">172min </span>
+                         <div class="iconos">
+                        <a><i class="far fa-star fa-sm"></i></a>
+                    </div>  
+                    <div class="descarga">
+                        <a><i class="far fa-arrow-alt-circle-down "></i></a>
+                        </div> 
+                         <div class="calificacion">
+                            <i class="fa fa-star" aria-hidden="true"></i>&nbsp;9.0</div>
+                    </div>
+                    </div>
+                    <div class="peliculas">
+                    <img src="img/cartelera1.jpg" />
+                      <div class="informacion">
+                        <h2>Titulo de la Pelicula</h2>
+                        <span class="generos"><a>Ficción</a>,&nbsp;<a>Ciencia-Ficción</a>,&nbsp;<a>Aventura</a> </span>
+                        <span class="duracion">172min </span>
+                         <div class="iconos">
+                        <a><i class="far fa-star fa-sm"></i></a>
+                    </div>  
+                    <div class="descarga">
+                        <a><i class="far fa-arrow-alt-circle-down "></i></a>
+                        </div> 
+                         <div class="calificacion">
+                            <i class="fa fa-star" aria-hidden="true"></i>&nbsp;9.0</div>
+                    </div>
+                    
+                </div>
+                    <div class="peliculas">
+                    <img src="img/cartelera5.jpg" />
+                      <div class="informacion">
+                        <h2>Titulo de la Pelicula</h2>
+                        <span class="generos"><a>Ficción</a>,&nbsp;<a>Ciencia-Ficción</a>,&nbsp;<a>Aventura</a> </span>
+                        <span class="duracion">172min </span>
+                         <div class="iconos">
+                        <a><i class="far fa-star fa-sm"></i></a>
+                    </div>  
+                    <div class="descarga">
+                        <a><i class="far fa-arrow-alt-circle-down "></i></a>
+                        </div> 
+                         <div class="calificacion">
+                            <i class="fa fa-star" aria-hidden="true"></i>&nbsp;9.0</div>
+                    </div>
+                    
+                </div>
+                </div>
+            </div>
+            
+            
+                <button role="button" id="flecha-derecha" class="flecha-derecha">
+                <i class="fas fa-angle-right"></i>
+            </button>
+            
+          
+              
+            </div>
+        </div>
+    
+    
+    <div class="Populares">
+        <h1 class="TituloInicial">Populares</h1>
+        <div class="indicadores">
+        
+        </div>
+        <div class="contenedorslider">
+            <button role="button" id="flecha-izquierda" class="flecha-izquierda">
+            <i class="fas fa-angle-left"></i>
+            </button>
+            <div class="contedor-carrusel">
+                <div class="carrusel">
+                <div class="peliculas">
+                    <img src="img/cartelera2.jpg" />
+                      <div class="informacion">
+                        <h2>Titulo de la Pelicula</h2>
+                        <span class="generos"><a>Ficción</a>,&nbsp;<a>Ciencia-Ficción</a>,&nbsp;<a>Aventura</a> </span>
+                        <span class="duracion">172min </span>
+                         <div class="iconos">
+                        <a><i class="far fa-star fa-sm"></i></a>
+                    </div>  
+                    <div class="descarga">
+                        <a><i class="far fa-arrow-alt-circle-down "></i></a>
+                        </div> 
+                         <div class="calificacion">
+                            <i class="fa fa-star" aria-hidden="true"></i>&nbsp;9.0</div>
+                    </div>
+                    </div>
+                       <div class="peliculas">
+                    <img src="img/cartelera3.jpg" />
+                      <div class="informacion">
+                        <h2>Titulo de la Pelicula</h2>
+                        <span class="generos"><a>Ficción</a>,&nbsp;<a>Ciencia-Ficción</a>,&nbsp;<a>Aventura</a> </span>
+                        <span class="duracion">172min </span>
+                         <div class="iconos">
+                        <a><i class="far fa-star fa-sm"></i></a>
+                    </div>  
+                    <div class="descarga">
+                        <a><i class="far fa-arrow-alt-circle-down "></i></a>
+                        </div> 
+                         <div class="calificacion">
+                            <i class="fa fa-star" aria-hidden="true"></i>&nbsp;9.0</div>
+                    </div>
+                    </div>
+                    
+                       <div class="peliculas">
+                    <img src="img/cartelera4.jpg" />
+                      <div class="informacion">
+                        <h2>Titulo de la Pelicula</h2>
+                        <span class="generos"><a>Ficción</a>,&nbsp;<a>Ciencia-Ficción</a>,&nbsp;<a>Aventura</a> </span>
+                        <span class="duracion">172min </span>
+                         <div class="iconos">
+                        <a><i class="far fa-star fa-sm"></i></a>
+                    </div>  
+                    <div class="descarga">
+                        <a><i class="far fa-arrow-alt-circle-down "></i></a>
+                        </div> 
+                         <div class="calificacion">
+                            <i class="fa fa-star" aria-hidden="true"></i>&nbsp;9.0</div>
+                    </div>
+                    </div>
+                    <div class="peliculas">
+                    <img src="img/cartelera1.jpg" />
+                      <div class="informacion">
+                        <h2>Titulo de la Pelicula</h2>
+                        <span class="generos"><a>Ficción</a>,&nbsp;<a>Ciencia-Ficción</a>,&nbsp;<a>Aventura</a> </span>
+                        <span class="duracion">172min </span>
+                         <div class="iconos">
+                        <a><i class="far fa-star fa-sm"></i></a>
+                    </div>  
+                    <div class="descarga">
+                        <a><i class="far fa-arrow-alt-circle-down "></i></a>
+                        </div> 
+                         <div class="calificacion">
+                            <i class="fa fa-star" aria-hidden="true"></i>&nbsp;9.0</div>
+                    </div>
+                    
+                </div>
+                    <div class="peliculas">
+                    <img src="img/cartelera5.jpg" />
+                      <div class="informacion">
+                        <h2>Titulo de la Pelicula</h2>
+                        <span class="generos"><a>Ficción</a>,&nbsp;<a>Ciencia-Ficción</a>,&nbsp;<a>Aventura</a> </span>
+                        <span class="duracion">172min </span>
+                         <div class="iconos">
+                        <a><i class="far fa-star fa-sm"></i></a>
+                    </div>  
+                    <div class="descarga">
+                        <a><i class="far fa-arrow-alt-circle-down "></i></a>
+                        </div> 
+                         <div class="calificacion">
+                            <i class="fa fa-star" aria-hidden="true"></i>&nbsp;9.0</div>
+                    </div>
+                    
+                </div>
+                </div>
+            </div>
+            
+            
+                <button role="button" id="flecha-derecha" class="flecha-derecha">
+                <i class="fas fa-angle-right"></i>
+            </button>
+            
+          
+              
+            </div>
+        </div>
+    </main>
+       
+</body>
+</html>
