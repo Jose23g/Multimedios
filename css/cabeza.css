@@ -1,4 +1,41 @@
 
+.box{
+    transform: translate(0%, 0%);
+}
+.input {
+    padding: 10px;
+    width: 40px;
+    height: 35px;
+    font-size: 18px;
+    background: none;
+    border: 1px solid #17c280;
+    border-radius: 50px;
+    box-sizing: border-box;
+    outline: none;
+    transition: .5s;
+}
+.box:hover input{
+    width: 350px;
+    background: #fdfdfd;
+    border-radius: 10px;
+    color: black;
+}
+i{
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    left: 14px;
+    transform: translate(-50%,-50%);
+    font-size: 26px;
+    color: #292825;
+    transition: .2s;
+}
+.box:hover .fg-buscar{
+    opacity: 0;
+    z-index: -1;
+}
+
+
  .menu_movil{
     display: none;  
 }
@@ -63,6 +100,19 @@ a{
 }
 
 @media screen and (max-width: 820px){
+    .box{
+        margin-right: 7px;
+    }
+    .box:hover input{
+        width: 200px;
+    }
+    .input{
+        height: 30px;
+        width: 30px;
+    }
+    .fg-buscar{
+        left: 8px;
+    }
     .Cabecera{
         margin: 1px;
         padding: 2px;
@@ -71,10 +121,15 @@ a{
     .opciones{
 		margin: 13px;
         padding: 6px;
+        display: none;
 	}
     .seleccion{
         display: block;
         font-family: 'Roboto', sans-serif;
+        margin-top: 11px;
+        margin-left: 30px;
+        margin-bottom: 10px;
+        border-style: none;
     }
 
     .seleccion option{
@@ -91,4 +146,5 @@ a{
     .categorias{
         display: block;
     }
+
 }

@@ -1,11 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
 
-
 .detalles{
     margin: 4rem;
     justify-content: center;
 }
-
 
 body{
     
@@ -323,12 +321,13 @@ ul li:hover a{
         font-size: 11px;
         letter-spacing: 0.4px;
         text-align: start;
+        height: 80px;
     }
     
     .peli-descripcion{
         width: 120px;
         max-height: 200px;
-       
+        width: 180px;
     }
     
     .btn-dura{
@@ -411,5 +410,8 @@ ul li:hover a{
     }
     .display{
         display: none;
+    }
+    .main{
+        margin-bottom: 120px;
     }
 }

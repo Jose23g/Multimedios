@@ -1,3 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant&display=swap');
+
+.cast{
+    margin-left: 30px;
+    margin-top: 34px;
+}
+
+.reparto{
+    margin-bottom: 0px;
+    font-family: 'Assistant', sans-serif;
+    font-size: 25px;
+}
+.persona{
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+.contenedor{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 1px 11px -2px black;
+    padding-bottom: 21px;
+    margin-bottom: 0px;
+    font-family: 'Assistant', sans-serif;
+    border-radius: 5px;
+    padding-bottom: 0px;
+    width: 151px;
+}
+  .item-a{
+    display: block;
+    margin-right: 40px;
+  } 
+  .NombreReal{
+    margin-top: 15px;
+    margin-bottom: 0px;
+    font-family: 'Assistant', sans-serif;
+  }
+  .NombrePersonaje{
+    margin-top: 7px;
+    font-family: 'Assistant', sans-serif;
+  }
+
 body{
 font-family: sans-serif;
 background-color: white;;
