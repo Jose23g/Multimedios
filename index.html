@@ -26,23 +26,24 @@
 <body>
     
     <div class="flex Cabecera justify-between items-center"></div>
+    
+    <div class="principal">
+        <section id="main">
 
-    <section id="main">
-
-        <h1 class="showcase-heading">Proximos estrenos</h1>
-        <ul id="autoWidth" class="cs-hidden"></ul>
-
-    </section>
-
-    <div class="flex main">
-        <h1 class="populares">Tendencias de la semana</h1>
-        <div class="peliculas flex" id="app">
-        </div>
-    </div> 
-    <div class="footer flex justify-between items-center"></div> 
-    <div class="abajo flex justify-between items-center"></div> 
-
-
+            <h1 class="showcase-heading">Proximos estrenos</h1>
+            <ul id="autoWidth" class="cs-hidden"></ul>
+    
+        </section>
+    
+        <div class="flex main">
+            <h1 class="populares">Tendencias de la semana</h1>
+            <div class="peliculas flex" id="app">
+            </div>
+        </div> 
+        <div class="footer flex justify-between items-center"></div> 
+        <div class="abajo flex justify-between items-center"></div> 
+    </div>
+    
     <script>
              $(document).ready(function() {
                 setTimeout(function(){
@@ -87,17 +88,7 @@
         $(function()
         {
             $(".footer").load("footerp.html");
-        });
-        
+        }); 
     </script>
-    <script>
-        const icon = document.querySelector(".icon");
-        const buscar = document.querySelector(".buscar");
-        icon.onclick = function(){
-            buscar.classList.toggle('active')
-        }   
-    </script>
-
-
 </body>
 </html>

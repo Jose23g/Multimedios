@@ -1,13 +1,14 @@
 
-document.querySelector(".input").addEventListener("keyup", function () {
-  Busqueda();
-});;
 
-buscador.addEventListener
+var buscador = document.getElementById("buscar");
+buscador.addEventListener('keyup', function(){
+  Busqueda();
+  
+  }); 
+  
 
 function Busqueda(argument) {
-  var busqueda = document.querySelector(".input").value;
-
+  var busqueda = document.getElementById("buscar").value;
   axios
     .get(
       "https://api.themoviedb.org/3/search/multi?api_key=c94ae96d76db457ccdb3767fef477a02&language=en-US&query=" +
