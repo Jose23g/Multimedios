@@ -543,9 +543,9 @@ li.tooltip a {
     width: 55px;
     right: auto;
     bottom: auto;
-    position: absolute;
-    top: 0px;
-    left: 285px;
+    position: relative;
+    top: 198px;
+    left: 252px;
   }
   .chart {
     display: none;
@@ -584,7 +584,7 @@ li.tooltip a {
   }
   .info {
     position: relative;
-    top: 75px;
+    top: 37px;
   }
   h3 {
     display: none;

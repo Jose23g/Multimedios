@@ -11,12 +11,13 @@
     <link rel="stylesheet" href="css/estilos.css">  
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    
+    <script src="js/metodos.js"></script>
     <script src="js/consumirAPI.js"></script>
     <script src="js/JQuery3.3.1.js"></script>
     <script src="js/lightslider.js" ></script>
     <script src="js/sliderAPI.js"></script>
     
+   
     
     <title>Proyecto Personal</title>
 </head>
@@ -25,20 +26,19 @@
     
     <div class="flex Cabecera justify-between items-center"></div>
 
-    <section id="main">
-
-        <h1 class="showcase-heading">Proximos estrenos</h1>
-        <ul id="autoWidth" class="cs-hidden"></ul>
-
-    </section>
-
-    <div class="flex main">
-        <h1 class="populares">Tendencias de la semana</h1>
-        <div class="peliculas flex" id="app">
-        </div>
-    </div> 
+    <div class="principal">
+        <section id="main">
+            <h1 class="showcase-heading">Proximos estrenos</h1>
+            <ul id="autoWidth" class="cs-hidden"></ul>
+        </section>
+        <div class="flex main">
+            <h1 class="populares">Tendencias de la semana</h1>
+            <div class="peliculas flex" id="app"></div>
+        </div> 
+    </div>
 
     <div class="abajo flex justify-between items-center"></div> 
+
 
     <script>
              $(document).ready(function() {
@@ -88,9 +88,8 @@
         const buscar = document.querySelector(".buscar");
         icon.onclick = function(){
             buscar.classList.toggle('active')
-        }
-       
+        }   
     </script>
-
+     
 </body>
 </html>
