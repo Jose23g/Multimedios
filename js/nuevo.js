@@ -32,25 +32,35 @@ media = geturl.get('media');
         // always executed
       });
 
-
       axios.get('https://api.themoviedb.org/3/tv/'+id+'/credits?api_key=c94ae96d76db457ccdb3767fef477a02&language=es-US')
       .then(function(response){
          
+        
         let carrusel = "";
         var reparto = document.querySelector("#autoWidth");
         response.data.cast.forEach(element =>{
-              carrusel += "<li class=\"item-a\">"
+          if(element.profile_path == null){
+            carrusel += "<li class=\"item-a\">"
               +"<div class=\"contenedor\">"
-                  +"<img class=\"persona\" src=\"https://www.themoviedb.org/t/p/w138_and_h175_face/"+element.profile_path+"\">"
+                  +"<img class=\"usuario\" src=\"https://www.softzone.es/app/uploads-softzone.es/2018/04/guest.png\"/>"
                   +"<h4 class=\"NombreReal\">"+element.name+"</h4>"
                   +"<h5 class=\"NombrePersonaje\">"+element.character+"</h5>"
               +"</div>"  
           +"</li>"
+          }else{
+            carrusel += "<li class=\"item-a\">"
+              +"<div class=\"contenedor\">"
+                  +"<img class=\"persona\" src=\"https://image.tmdb.org/t/p/original/"+element.profile_path+"\">"
+                  +"<h4 class=\"NombreReal\">"+element.name+"</h4>"
+                  +"<h5 class=\"NombrePersonaje\">"+element.character+"</h5>"
+              +"</div>"  
+          +"</li>"
+          }
+              
         });
         reparto.innerHTML = carrusel;
 
 
-        console.log(response);
       }).catch(function (error) {
         // handle error
         console.log(error);
@@ -101,13 +111,24 @@ media = geturl.get('media');
         let carrusel = "";
         var reparto = document.querySelector("#autoWidth");
         response.data.cast.forEach(element =>{
-              carrusel += "<li class=\"item-a\">"
+          if(element.profile_path == null){
+            carrusel += "<li class=\"item-a\">"
               +"<div class=\"contenedor\">"
-                  +"<img class=\"persona\" src=\"https://www.themoviedb.org/t/p/w138_and_h175_face/"+element.profile_path+"\">"
+                  +"<img class=\"usuario\" src=\"https://www.softzone.es/app/uploads-softzone.es/2018/04/guest.png\"/>"
                   +"<h4 class=\"NombreReal\">"+element.name+"</h4>"
                   +"<h5 class=\"NombrePersonaje\">"+element.character+"</h5>"
               +"</div>"  
           +"</li>"
+          }else{
+            carrusel += "<li class=\"item-a\">"
+              +"<div class=\"contenedor\">"
+                  +"<img class=\"persona\" src=\"https://image.tmdb.org/t/p/original/"+element.profile_path+"\">"
+                  +"<h4 class=\"NombreReal\">"+element.name+"</h4>"
+                  +"<h5 class=\"NombrePersonaje\">"+element.character+"</h5>"
+              +"</div>"  
+          +"</li>"
+          }
+              
         });
         reparto.innerHTML = carrusel;
 
