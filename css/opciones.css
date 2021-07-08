@@ -101,7 +101,7 @@ body{
         top: 10px;
         position: relative;
     }
-    .generos{
+    .generos {
         padding-left: 4px;
         font-family: 'Source Sans Pro', sans-serif;
         font-size: 12px;
@@ -121,7 +121,7 @@ body{
         padding-right: 4px;
         padding-bottom: 2px;
     }
-        .iconos{
+        .iconos i{
         bottom:1px;
         left: 150px;
         position: relative;

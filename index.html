@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/cabeza.css">
     <link rel="stylesheet" href="css/estilos.css">  
+    <link rel="stylesheet" href="css/disenofooter.css">
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     
@@ -37,7 +38,7 @@
         <div class="peliculas flex" id="app">
         </div>
     </div> 
-
+    <div class="footer flex justify-between items-center"></div> 
     <div class="abajo flex justify-between items-center"></div> 
 
     <script>
@@ -81,6 +82,10 @@
         {
             $(".abajo").load("abajo.html");
         });
+        $(function()
+        {
+            $(".footer").load("footerp.html");
+        });
         
     </script>
     <script>
@@ -91,6 +96,7 @@
         }
        
     </script>
+
 
 </body>
 </html>
