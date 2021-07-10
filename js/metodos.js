@@ -18,6 +18,9 @@ buscador.addEventListener('keyup', function(){
   })
 
 function Escribe(e){
+
+
+
   if(window.matchMedia("(max-width: 820px)").matches){
     buscador.style.cssText = "width: 200px;";
     equis.style.cssText = "display: block; top: 25%; left: 175px;";
@@ -33,7 +36,21 @@ function Escribe(e){
     
 }
 
-function Borra(){
+function Borra(e){
+var cajatexto = document.getElementById("buscar").value;
+  if(cajatexto.length >0) {
+
+    var visible = "visible";
+   var novisible = "novisible";
+    var ocultaprincipal = document.getElementById("contenedor_principal");
+     
+    if(ocultaprincipal.className.includes(novisible)){
+      ocultaprincipal.className = ocultaprincipal.className.replace(novisible,"").trim();
+      ocultaprincipal.className+= " "+ visible;
+    } else{
+   }
+  }
+ 
   if(window.matchMedia("(max-width: 820px)").matches){
     
     buscador.style.cssText = "width: 30px; height: 30px;";
@@ -53,9 +70,27 @@ function Borra(){
 x.addListener(Escribe);
 Escribe(x);
 
+
+
 function Busqueda(argument) {
   var busqueda = document.getElementById("buscar").value;
-  axios
+
+
+  if(busqueda.length >0) {
+    var visible = "visible";
+   var novisible = "novisible";
+    var ocultaprincipal = document.getElementById("contenedor_principal");
+     
+    if(ocultaprincipal.className.includes(novisible)){
+      
+      
+    } else{
+     console.log("No lo tiene")
+     ocultaprincipal.className = ocultaprincipal.className.replace(visible,"").trim();
+     ocultaprincipal.className+= " "+ novisible;
+   }
+
+    axios
     .get("https://api.themoviedb.org/3/search/multi?api_key=c94ae96d76db457ccdb3767fef477a02&language=es-US&query=" +busqueda +"&page=1&include_adult=false")
     .then(function (response) {
       var peli = response.data.results;
@@ -128,4 +163,19 @@ function Busqueda(argument) {
     .then(function () {
       // always executed
     });
+
+  } else{
+    var ocultaprincipal = document.getElementById("contenedor_principal");
+    var visible = "visible";
+    var novisible = "novisible";
+    if(ocultaprincipal.className.includes(novisible)){
+            
+      ocultaprincipal.className = ocultaprincipal.className.replace(novisible,"").trim();
+      ocultaprincipal.className+= " "+ visible;
+      console.log("Se lo quitamos");
+  }
+    
+  }
+
+ 
 }
