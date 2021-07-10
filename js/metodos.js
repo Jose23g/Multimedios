@@ -1,79 +1,157 @@
+
 var buscador = document.getElementById("buscar");
 var buscar = document.querySelector(".fg-buscar");
 var equis = document.querySelector(".fg-equis");
 var principal = document.querySelector(".principal");
-var visible = "visible";
-var novisible = "novisible";
-var contenedor_principal = document.getElementById("contenedor_principal");
 
-buscador.addEventListener("keyup", function () {
+
+buscador.addEventListener('keyup', function(){
+
   var busqueda = document.getElementById("buscar").value;
-  if (busqueda.length > 0) {
-    if (!contenedor_principal.className.includes(novisible)) {
-      contenedor_principal.className = contenedor_principal.className
-        .replace(visible, "")
-        .trim();
-        contenedor_principal.className += " " + novisible;
-      console.log("Se va el contenedor principal");
+  var mostrarprincipal = document.getElementById("principal"); 
+  var ocultaprincipal = document.getElementById("contenedor_principal");
 
-      Busqueda();
-    } 
-  } else {
-    if (contenedor_principal.className.includes(novisible)) {
-      contenedor_principal.className = contenedor_principal.className
-        .replace(novisible, "")
-        .trim();
-        contenedor_principal.className += " " + visible;
-        console.log("Volvemos al contenedor principal");
-        principal.style.cssText = "display: none;"
-    }
+  var visible = "visible";
+  var novisible = "novisible";
+
+  if(busqueda.length >0) {
+    Busqueda();
+    if(ocultaprincipal.className.includes(novisible)){
+      
+      
+    } else{
+     console.log("No lo tiene")
+     ocultaprincipal.className = ocultaprincipal.className.replace(visible," ").trim();
+     ocultaprincipal.className+= " "+ novisible;
+   }
+
+   if(mostrarprincipal.className.includes(novisible)){
+    mostrarprincipal.className = mostrarprincipal.className.replace(novisible," ").trim();
+    mostrarprincipal.className+= " "+ visible;
   }
-});
+    
+    
+    
 
-buscador.addEventListener("click", function () {
-  Escribe();
-});
+  } else{
+    if(ocultaprincipal.className.includes(novisible)){
+            
+      ocultaprincipal.className = ocultaprincipal.className.replace(novisible," ").trim();
+      ocultaprincipal.className+= " "+ visible;
+      console.log("Se lo quitamos");
+      principal.style.cssText = "display: none;"
+  } 
 
-equis.addEventListener("click", function () {
-  Borra();
-});
+  if(mostrarprincipal.className.includes(visible)){
+    mostrarprincipal.className = mostrarprincipal.className.replace(visible," ").trim();
+    mostrarprincipal.className+= " "+ novisible;
+  } 
+  
+  }
+  
+ 
+  
+  }); 
 
-function Escribe(e) {
-  if (window.matchMedia("(max-width: 820px)").matches) {
+  buscador.addEventListener('click', function(){
+    Escribe();
+  })
+
+  equis.addEventListener('click', function(){
+    Borra();
+  })
+
+function Escribe(e){
+
+
+
+  if(window.matchMedia("(max-width: 820px)").matches){
     buscador.style.cssText = "width: 200px;";
     equis.style.cssText = "display: block; top: 25%; left: 175px;";
     buscar.style.cssText = "opacity: 0; z-index: -1;";
-  } else {
+
+  }else{
     buscador.style.cssText = " width: 350px;";
     equis.style.cssText = "display: block;";
     buscar.style.cssText = "opacity: 0; z-index: -1;";
     console.log("Se activo");
   }
+  
+    
 }
 
-function Borra(e) {
+function Borra(e){
+  var cajatexto = document.getElementById("buscar").value;
+  var visible = "visible";
+  var novisible = "novisible";
+  var ocultaprincipal = document.getElementById("contenedor_principal");
   
+  if(cajatexto.length >0) {  
+    if(ocultaprincipal.className.includes(novisible))
+    {
+      ocultaprincipal.className = ocultaprincipal.className.replace(novisible," ").trim();
+      ocultaprincipal.className+= " "+ visible;
+      principal.style.cssText = "display: none;";
+      if(window.matchMedia("(max-width: 820px)").matches){
+    
+        buscador.style.cssText = "width: 30px; height: 30px;";
+        buscar.style.cssText = "top: 50%; left: 8px; font-size: 20px;";
+        buscador.value = "";
+        equis.style.cssText = "display:none"
+        principal.style.cssText = "display: none;"
+      
+    
+      }
+      else
+      {
+        buscador.style.cssText = "width: 40px;";
+        buscar.style.cssText = "";
+        buscador.value = "";
+        equis.style.cssText = "display:none"
+        principal.style.cssText = "display: none;"
+      }
 
-  if (window.matchMedia("(max-width: 820px)").matches) {
-    buscador.style.cssText = "width: 30px; height: 30px;";
-    buscar.style.cssText = "top: 50%; left: 8px; font-size: 20px;";
-    buscador.value = "";
-    equis.style.cssText = "display:none";
-  } else {
-    buscador.style.cssText = "width: 40px;";
-    buscar.style.cssText = "";
-    buscador.value = "";
-    equis.style.cssText = "display:none;";
+    } 
+    else
+    {
+    } 
+
+    var mostrarprincipal = document.getElementById("principal");
+      if(mostrarprincipal.className.includes(visible))
+      {
+        mostrarprincipal.className = mostrarprincipal.className.replace(visible," ").trim();
+        mostrarprincipal.className+= " "+ novisible;
+        
+      }   
+     
   }
-  principal.style.cssText = "display:none;";
-  contenedor_principal.className = contenedor_principal.className
-        .replace(novisible, "")
-        .trim();
-        contenedor_principal.className += " " + visible;
+  else
+  {
+    if(window.matchMedia("(max-width: 820px)").matches){
+    
+      buscador.style.cssText = "width: 30px; height: 30px;";
+      buscar.style.cssText = "top: 50%; left: 8px; font-size: 20px;";
+      buscador.value = "";
+      equis.style.cssText = "display:none"
+      principal.style.cssText = "display: none;"
+    
+  
+    }
+    else
+    {
+      buscador.style.cssText = "width: 40px;";
+      buscar.style.cssText = "";
+      buscador.value = "";
+      equis.style.cssText = "display:none"
+      principal.style.cssText = "display: none;"
+    }
+  } 
+  
 }
 
 
 function Busqueda(argument) {
+
   var busqueda = document.getElementById("buscar").value;
   axios
   .get("https://api.themoviedb.org/3/search/multi?api_key=c94ae96d76db457ccdb3767fef477a02&language=es-US&query=" +busqueda +"&page=1&include_adult=false")
@@ -132,13 +210,14 @@ function Busqueda(argument) {
       
       }
       principal.innerHTML = contenido;
-      principal.style.cssText = "display: flex;"+
+          principal.style.cssText = "display: flex;"+
                           "flex-wrap: wrap;"+
                           "align-content: center;"+
                           "justify-content: center;"+
                           "transition: all .5s;";
     });
     
+
   })
   .catch(function (error) {
     // handle error
@@ -147,4 +226,9 @@ function Busqueda(argument) {
   .then(function () {
     // always executed
   });
+
+ 
+  
+
+ 
 }

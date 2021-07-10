@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Assistant&display=swap");
 
+.novisible{
+  display: none;
+} 
+
+.visible{
+  display: block; 
+}
 
 .cast{
   margin-bottom: 150px;
