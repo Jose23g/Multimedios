@@ -47,7 +47,7 @@
 .Cabecera{
     padding: 3px 55px 3px 55px;
     background-color: white;
-    
+    height: 70px;
 }
 .categorias{
     display: none;
@@ -71,9 +71,9 @@
     font-family: "Assistant", sans-serif;
 }
 
-ul li:hover a{
+.flex ul li:hover a{
     padding-left: 20px;
-    color: black;
+    
     border-left: 1px solid rgb(30, 220, 100);
 }
 
@@ -99,7 +99,7 @@ ul li:hover a{
 	align-items: center;
 }
 
-a{
+.flex, .categorias a{
     text-decoration: none;
     display: flex;
     cursor: pointer;

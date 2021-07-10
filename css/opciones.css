@@ -4,14 +4,6 @@ body{
     box-sizing: border-box;
     
     }
-    .trending{
-      position: relative;
-      margin: 10px 12px 4px 2px;
-      top: 80px;
-      height: 500px;
-      width: 100%;
-      background-color:aliceblue;
-    }
     /*Contenedor Slider*/
     .Estrenos{
        margin-bottom: 30px; 
@@ -21,48 +13,13 @@ body{
         align-items: center;
         position: relative;
     }
-    .flecha-izquierda, .flecha-derecha {
-        position: absolute;
-        border: none;
-        background: rgba(0,0,0,0.3);
-        font-size: 40px;
-        height: 20%;
-        top: calc(60% - 25%);
-        line-height: 40px;
-        width: 50px;
-        color: white;
-        cursor: pointer;
-        z-index: 500;
-        transition: .2s ease all;  
-    }
-    .flecha-izquierda:hover, .flecha-derecha:hover{
-      background: rgba(0,0,0,.6);  
-    }
-    .flecha-izquierda{
-       left: 0; 
-    }
-    .flecha-derecha {
-       right: 0; 
-    }
-    /*Contendor Carrusel*/
-    .contenedor-carrusel{
-        width: 100%;
-        padding: 20px 0;
-        overflow: hidden;
-        scroll-behavior: smooth;
-    }
-    .carrusel{
-        display: flex;
-        flex-wrap: nowrap;
-        margin-left: 20px;
-    }
     .peliculas{
-        min-width: 20%;
         transition: .3s ease all;
         box-shadow: 5px5px 10px rgba(0,0,0,.3);
         margin-left: 4px;
         margin-right: 4px;
         margin-top: 20px;
+        margin-bottom: 10px;
     }
     .peliculas img{
         min-width: 200px;
@@ -87,10 +44,11 @@ body{
         color: #1a1a1a;
     }
     .informacion{
-        width: 233px;
+        width:94%; 
         height: 110px;
         box-shadow: 0 1px 4px -2px black;
         background-color: white;
+        margin-bottom: 10px;
     
     }
     h2{
@@ -101,104 +59,86 @@ body{
         top: 10px;
         position: relative;
     }
-    .generos a{
-        display: inline-flex;
-        padding-left: 4px;
+    .generos{
+        left: 6px;
         font-family: 'Source Sans Pro', sans-serif;
         font-size: 12px;
-        position: relative;
-        top: -4px;
-    }
-    .duracion{
-        display: flex;
-        margin-top: 10px;
-        margin-left: 10px;
+        position: relative;   
+        top: 10px;
+}
+
+    .duracion {
         font-size: 13px;
+        padding-left: 2px;
+        margin-left: 20px;
+        position: relative;
+        top: 28px;
+        left: -10px;
         border-radius: 8px;
-        justify-items: center;
-        justify-content: space-between;
+        background-color: rgba(223, 209, 234, 0.53);
+        padding-top: 2.8px;
+        padding-right: 4px;
+        padding-bottom: 2px;
     }
-    .minutos{
-        background-color: darkseagreen;
-        padding-left: 5px;
-        padding-right: 5px;
-        padding-top: 5px;
-        padding-bottom: 5px;
-        border-radius: 29px;
-    }
-        .estrella i{ 
-            height: 14px;
-            color: #c1cdd6;
-            margin-right: 9px;
-            font-size: 17px;
+        .iconos i{
+        bottom:-10px;
+        left: 150px;
+        position: relative;
+        color: #c1cdd6;
         }
-        .descargar i{
-            height: 14px;
-            color: #c1cdd6;
-            margin-right: 13px;
-            font-size: 17px;
+        .descarga i{
+        position: relative;
+        bottom: 6px;
+        left: 180px;
+        color: #c1cdd6;   
         }
-       
-      .calificacion{
-            top: -37px;
+      .calificacion {
+            position: relative;
+            top: -26px;
             color: orange;
             font-size: 18px;
             left: 70px;
-            margin-top: 9px;
-            margin-bottom: 9px;
-        
+            margin-right: 4px;
+            margin-left: 4px;
         }
-        .cosas {
-            margin-top: 13px;
-            margin-bottom: 14px;
-            display:flex;
-        }
+
     @media screen and (max-width: 800px){
-    .contenedor-carrusel{
-        width: 100%;
-    }
-    
-    .peliculas{
-        min-width: 14%;
-         margin-top: 10px;
-    }
-    .peliculas img{
-        min-width: 220px;
-        width: 200px;
-        min-height: 300px;
-        height: 250px;
-        object-fit: cover;
-        object-position: top;
-        vertical-align: top;
-    }
-    .peliculas img:hover{
-        transform: scale(1.1);
-        transform-origin: center;
-    }
+
+        .peliculas{
+            width: 250px;
+            margin-top: 10px;
+        }
+        .peliculas img{
+            min-width: 220px;
+            width: 200px;
+        }
+        
         .TituloInicial{
         padding: 10px;
         margin-bottom: 2px;
         letter-spacing: 1px;
         text-transform: uppercase;
         font-size: 1.1rem;
-        color: #1a1a1a;
     }
     .informacion{
-        width:100%; 
+        width:88%; 
+        height: 96px;
     
     }
-    .iconos{
-        bottom:1px;
-        left: 150px;
-        position: relative;
-        color: #c1cdd6;
+    .iconos i{
+        bottom:-10px;
+        left: 160px;
         }
-        .descarga{
-        position: relative;
-        bottom: 17px;
-        left: 180px;
-        color: #c1cdd6;   
+        .descarga i{
+        bottom: 6px;
+        left: 190px;  
         }
-    
+        
+        .calificacion {
+            top: -26px;
+            font-size: 17px;
+            left: 80px;
+            
+        }
     }
     
