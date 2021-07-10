@@ -17,14 +17,17 @@
     outline: none;
     transition: .5s;
 }
-.box:hover input{
-    width: 350px;
-    background: #fdfdfd;
-    border-radius: 10px;
-    color: black;
-    
-}
 
+.fg-equis{
+    display: none;
+    position: absolute;
+    top: 30%;
+    left: 322px;
+    transform: translate(0%,0%);
+    font-size: 22px;
+    color: #292825;
+    transition: .2s;
+}
 .i-busca{
     position: absolute;
     top: 50%;
@@ -36,7 +39,6 @@
     transition: .2s;
 }
 .box:hover .fg-buscar{
-    opacity: 0;
     z-index: -1;
 }
 
@@ -110,16 +112,14 @@ a{
     .box{
         margin-right: 7px;
     }
-    .box:hover input{
-        width: 200px;
-        
-    }
+   
     .input{
         height: 30px;
         width: 30px;
+        
     }
     .fg-buscar{
-        left: 8px;
+        top: 50%; left: 8px; font-size: 20px;
     }
     .Cabecera{
         margin: 1px;
@@ -155,5 +155,8 @@ a{
     .categorias{
         display: block;
     }
-
+    .fg-equis{
+        top: 32%;
+        left: 173px;
+    }
 }

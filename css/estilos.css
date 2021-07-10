@@ -1,54 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
 
 
-.poster{
-    width:100%;
-    height:100%
-}
-
-.img{
-    max-width: 203px;
-    min-width: 203px;
-    height: auto;
-}
-.contenido{
-    box-shadow: 0 1px 12px -2px black;
-}
-
-.Npeli{
-    font-family: "Assistant", sans-serif;
-}
-
-.clasi{
-    font-size: 13px;
-    font-family: "Assistant", sans-serif;
-}
-
-
-.principal-resultado{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .detalles{
     margin: 4rem;
     justify-content: center;
@@ -65,7 +17,6 @@ a{
     display: flex;
     cursor: pointer;
 }
-
 
 .flex{
     display: flex;
@@ -225,8 +176,8 @@ ul li:hover a{
 }
 
 .imagen{
-    max-width: 120px;
-    min-width: 119px;
+    max-width: 100px;
+    min-width: 100px;
     height: auto;
 }
 
@@ -258,6 +209,7 @@ ul li:hover a{
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical; 
+    font-family: "Assistant", sans-serif;
     }
 
 .info-peli{
@@ -343,22 +295,6 @@ ul li:hover a{
          padding: 6px;
     }
     
-    .icono{
-        display: block;
-        margin: 30px;    
-    }
-    
-    .abajo{
-        display: flex;
-        bottom: 0;
-        position: fixed;
-        background-color: white;
-        justify-content: center; 
-        align-items: center;
-        width: 100%;
-        z-index: 1;
-    }
-
     .circulo{
         display: flex;
         align-items: center;
@@ -444,12 +380,6 @@ ul li:hover a{
         height: 100%;
         border-radius: 5px;
         box-shadow: 0 1px 11px -2px black;
-    }
-
-    .imagen{
-        max-width: 120px;
-        min-width: 119px;
-        height: auto;
     }
 
     .pelis{

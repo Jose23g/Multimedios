@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/cabeza.css">
     <link rel="stylesheet" href="css/estilos.css">  
+    <link rel="stylesheet" href="css/abajo.css">
     <link rel="stylesheet" href="css/disenofooter.css">
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
@@ -28,22 +29,24 @@
     <div class="flex Cabecera justify-between items-center"></div>
     
     <div class="principal">
-        <section id="main">
+        <div>
+            <section id="main">
 
-            <h1 class="showcase-heading">Proximos estrenos</h1>
-            <ul id="autoWidth" class="cs-hidden"></ul>
-    
-        </section>
-    
-        <div class="flex main">
-            <h1 class="populares">Tendencias de la semana</h1>
-            <div class="peliculas flex" id="app">
-            </div>
-        </div> 
-        <div class="footer flex justify-between items-center"></div> 
-        <div class="abajo flex justify-between items-center"></div> 
+                <h1 class="showcase-heading">Proximos estrenos</h1>
+                <ul id="autoWidth" class="cs-hidden"></ul>
+        
+            </section>
+        
+            <div class="flex main">
+                <h1 class="populares">Tendencias de la semana</h1>
+                <div class="peliculas flex" id="app">
+                </div>
+            </div> 
+        </div>
     </div>
-    
+
+    <div class="footer flex justify-between items-center"></div> 
+    <div class="abajo flex justify-between items-center"></div> 
     <script>
              $(document).ready(function() {
                 setTimeout(function(){
@@ -80,15 +83,9 @@
     <script>
         $(function(){
           $(".Cabecera").load("cabecera.html");
+          $(".abajo").load("abajo.html");
+          $(".footer").load("footerp.html");
         });
-        $(function()
-        {
-            $(".abajo").load("abajo.html");
-        });
-        $(function()
-        {
-            $(".footer").load("footerp.html");
-        }); 
     </script>
 </body>
 </html>

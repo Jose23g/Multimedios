@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+
+.poster{
+    width:100%;
+    height:100%
+}
+
+.img{
+    max-width: 203px;
+    min-width: 203px;
+    height: auto;
+}
+.contenido{
+    box-shadow: 0 1px 12px -2px black;
+}
+
+.Npeli{
+    font-family: "Assistant", sans-serif;
+}
+
+.clasi{
+    font-size: 13px;
+    font-family: "Assistant", sans-serif;
+}
+
+
+.principal-resultado{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}

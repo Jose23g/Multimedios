@@ -1,7 +1,7 @@
     const api_key = 'c94ae96d76db457ccdb3767fef477a02';
     var idpeli;
 
-    axios.get('https://api.themoviedb.org/3/trending/all/day?api_key='+api_key)
+    axios.get('https://api.themoviedb.org/3/trending/all/day?api_key='+api_key+"&language=es-ES")
       .then(function(response)
             {
                 var peli = response.data.results;
