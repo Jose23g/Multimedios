@@ -1,12 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Assistant&display=swap");
 
+
 .cast{
   margin-bottom: 150px;
 }
 h3 {
   font-family: "Assistant", sans-serif;
 }
-
+.Title{
+  text-align:center;
+  margin-top: 4px;
+  border-top: 4px solid#4f5b66;
+  font-size: 20px;
+}
 #autoWidth{
   height: 369.172px;
 }
@@ -262,7 +268,7 @@ body {
   flex-wrap: wrap;
   color: white;
 }
-h2 {
+h3 .informacion{
   width: 100%;
   margin: 0;
   padding: 0;
