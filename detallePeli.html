@@ -12,23 +12,13 @@
     <link rel="stylesheet" type="text/css" href="css/cabeza.css" />
     <link rel="stylesheet" href="css/lightslider.css" />
     <link rel="stylesheet" href="iconos/css/all.css" />
+    <link rel="stylesheet" href="css/disenofooter.css">
+    <link rel="stylesheet" href="css/abajo.css">
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet"/>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet"/>
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="js/JQuery3.3.1.js"></script>
@@ -41,12 +31,6 @@
   <body>
     <!--Navigation bar-->
     <div class="flex Cabecera justify-between items-center"></div>
-
-    <script>
-      $(function () {
-        $(".Cabecera").load("cabecera.html");
-      });
-    </script>
     <!--end of Navigation bar-->
 
     <h3 class="Title">Información de la Pelicula</h3>
@@ -67,89 +51,115 @@
                     >
                   </span>
                   <span class="duracion">172min </span>
+    <div class="principal">
+      
+        <h3>Información de la Pelicula</h3>
+        <div class="header_pelis">
+          <div class="bg">
+              <div class="poster_wrapper">
+                <img class="posteroriginal" src=""/>
                 </div>
-                <ul class="acciones">
-                  <li class="chart">
-                    <div class="detalles">
-                      <div class="outer_ring">
-                        <div
-                          class="puntuacion"
-                          data-percent="80.0"
-                          data-track-color="#204529"
-                          data-bar-color="#21d07a"
-                        >
-                          <div class="porcentaje">
-                            <span class="label">80%</span>
+                <section class="informacion">
+                  <div class="titulos" id="titulo">
+                    <h2></h2>
+                  </div>
+                  <div class="facts">
+                    <span class="certification">TV-14 </span>
+                    <span class="generos"
+                      ><a>Ficción</a>,&nbsp;<a>Ciencia-Ficción</a>,&nbsp;<a
+                        >Aventura</a
+                      >
+                    </span>
+                    <span class="duracion">172min </span>
+                  </div>
+                  <ul class="acciones">
+                    <li class="chart">
+                      <div class="detalles">
+                        <div class="outer_ring">
+                          <div
+                            class="puntuacion"
+                            data-percent="80.0"
+                            data-track-color="#204529"
+                            data-bar-color="#21d07a"
+                          >
+                            <div class="porcentaje">
+                              <span class="label">80%</span>
+                            </div>
+                            <canvas height="60" width="60"></canvas>
                           </div>
-                          <canvas height="60" width="60"></canvas>
                         </div>
                       </div>
+                      <div class="text">Puntuación<br />de usuario</div>
+                    </li>
+                    <li
+                      class="tooltip use_tooltip"
+                      title="Marcar como favorito"
+                      data-role="tooltip"
+                    >
+                      <div class="favorito">
+                        <a
+                          ><i class="fa fa-heart" aria-hidden="true"></i>
+                        </a>
+                      </div>
+                    </li>
+                    <li
+                      class="tooltip use_tooltip"
+                      title="Califica!"
+                      data-role="tooltip"
+                    >
+                      <div class="califica">
+                        <a
+                          ><i class="fa fa-star" aria-hidden="true"></i>
+                        </a>
+                      </div>
+                    </li>
+                    <li
+                      class="tooltip use_tooltip"
+                      title="Descargar"
+                      data-role="tooltip"
+                    >
+                      <div class="descargar">
+                        <a
+                          ><i
+                            class="fa fa-arrow-down"
+                            aria-hidden="true"
+                          ></i>
+                        </a>
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="info">
+                    <h3 dir="auto">Descripcion</h3>
+                    <div class="overview" dir="auto">
+                      <p class="descripcionpeli">
+                        En un momento en que los monstruos caminan por la
+                        Tierra, la lucha de la humanidad por su futuro
+                        coloca a Godzilla y Kong en un curso de colisión que
+                        verá a las dos fuerzas más poderosas de la
+                        naturaleza en el planeta enfrentarse en una batalla
+                        espectacular para las edades. Mientras Monarch se
+                        embarca en una peligrosa misión en un terreno
+                        inexplorado y descubre pistas sobre los orígenes de
+                        los Titanes, una conspiración humana amenaza con
+                        borrar a las criaturas, tanto buenas como malas, de
+                        la faz de la tierra para siempre.
+                      </p>
                     </div>
-                    <div class="text">Puntuación<br />de usuario</div>
-                  </li>
-                  <li
-                    class="tooltip use_tooltip"
-                    title="Marcar como favorito"
-                    data-role="tooltip"
-                  >
-                    <div class="favorito">
-                      <a
-                        ><i class="fa fa-heart" aria-hidden="true"></i>
-                      </a>
-                    </div>
-                  </li>
-                  <li
-                    class="tooltip use_tooltip"
-                    title="Califica!"
-                    data-role="tooltip"
-                  >
-                    <div class="califica">
-                      <a
-                        ><i class="fa fa-star" aria-hidden="true"></i>
-                      </a>
-                    </div>
-                  </li>
-                  <li
-                    class="tooltip use_tooltip"
-                    title="Descargar"
-                    data-role="tooltip"
-                  >
-                    <div class="descargar">
-                      <a
-                        ><i
-                          class="fa fa-arrow-down"
-                          aria-hidden="true"
-                        ></i>
-                      </a>
-                    </div>
-                  </li>
-                </ul>
-                <div class="info">
-                  <h3 dir="auto">Descripcion</h3>
-                  <div class="overview" dir="auto">
-                    <p class="descripcionpeli">
-                      En un momento en que los monstruos caminan por la
-                      Tierra, la lucha de la humanidad por su futuro
-                      coloca a Godzilla y Kong en un curso de colisión que
-                      verá a las dos fuerzas más poderosas de la
-                      naturaleza en el planeta enfrentarse en una batalla
-                      espectacular para las edades. Mientras Monarch se
-                      embarca en una peligrosa misión en un terreno
-                      inexplorado y descubre pistas sobre los orígenes de
-                      los Titanes, una conspiración humana amenaza con
-                      borrar a las criaturas, tanto buenas como malas, de
-                      la faz de la tierra para siempre.
-                    </p>
                   </div>
-                </div>
-              </section>
+                </section>
+          </div>
         </div>
+
+      <div class="cast">
+        <h3 class="reparto">Reparto</h3>
+        <lu id="autoWidth" class="cs-hidden flex"> </lu>
       </div>
 
-    <div class="cast">
-      <h3 class="reparto">Reparto</h3>
-      <lu id="autoWidth" class="cs-hidden flex"> </lu>
     </div>
+    
+    <div class="footer flex justify-between items-center"></div> 
+    <div class="abajo flex justify-between items-center"></div> 
+    
     
     <script>
       $().ready(function () {
@@ -179,6 +189,13 @@
             ],
           });
         }, 500);
+      });
+    </script>
+    <script>
+      $(function () {
+        $(".Cabecera").load("cabecera.html");
+        $(".abajo").load("abajo.html");
+        $(".footer").load("footerp.html");
       });
     </script>
   </body>

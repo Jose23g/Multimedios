@@ -1,21 +1,97 @@
 
-
 var buscador = document.getElementById("buscar");
+var buscar = document.querySelector(".fg-buscar");
+var equis = document.querySelector(".fg-equis");
+var principal = document.querySelector(".principal");
+
 buscador.addEventListener('keyup', function(){
   Busqueda();
   
   }); 
+
+  buscador.addEventListener('click', function(){
+    Escribe();
+  })
+
+  equis.addEventListener('click', function(){
+    Borra();
+  })
+
+function Escribe(e){
+
+
+
+  if(window.matchMedia("(max-width: 820px)").matches){
+    buscador.style.cssText = "width: 200px;";
+    equis.style.cssText = "display: block; top: 25%; left: 175px;";
+    buscar.style.cssText = "opacity: 0; z-index: -1;";
+
+  }else{
+    buscador.style.cssText = " width: 350px;";
+    equis.style.cssText = "display: block;";
+    buscar.style.cssText = "opacity: 0; z-index: -1;";
+    console.log("Se activo");
+  }
   
+    
+}
+
+function Borra(e){
+var cajatexto = document.getElementById("buscar").value;
+  if(cajatexto.length >0) {
+
+    var visible = "visible";
+   var novisible = "novisible";
+    var ocultaprincipal = document.getElementById("contenedor_principal");
+     
+    if(ocultaprincipal.className.includes(novisible)){
+      ocultaprincipal.className = ocultaprincipal.className.replace(novisible,"").trim();
+      ocultaprincipal.className+= " "+ visible;
+    } else{
+   }
+  }
+ 
+  if(window.matchMedia("(max-width: 820px)").matches){
+    
+    buscador.style.cssText = "width: 30px; height: 30px;";
+    buscar.style.cssText = "top: 50%; left: 8px; font-size: 20px;";
+    buscador.value = "";
+    equis.style.cssText = "display:none"
+  
+
+  }else{
+    buscador.style.cssText = "width: 40px;";
+    buscar.style.cssText = "";
+    buscador.value = "";
+    equis.style.cssText = "display:none"
+  }
+}
+
+x.addListener(Escribe);
+Escribe(x);
+
+
 
 function Busqueda(argument) {
   var busqueda = document.getElementById("buscar").value;
-  axios
-    .get(
-      "https://api.themoviedb.org/3/search/multi?api_key=c94ae96d76db457ccdb3767fef477a02&language=en-US&query=" +
-        busqueda +
-        "&page=1&include_adult=false"
-    )
 
+
+  if(busqueda.length >0) {
+    var visible = "visible";
+   var novisible = "novisible";
+    var ocultaprincipal = document.getElementById("contenedor_principal");
+     
+    if(ocultaprincipal.className.includes(novisible)){
+      
+      
+    } else{
+     console.log("No lo tiene")
+     ocultaprincipal.className = ocultaprincipal.className.replace(visible,"").trim();
+     ocultaprincipal.className+= " "+ novisible;
+   }
+
+    axios
+    .get("https://api.themoviedb.org/3/search/multi?api_key=c94ae96d76db457ccdb3767fef477a02&language=es-US&query=" +busqueda +"&page=1&include_adult=false")
     .then(function (response) {
       var peli = response.data.results;
       let contenido = "";
@@ -65,10 +141,20 @@ function Busqueda(argument) {
                         "</a>"+
                     "</div>";
 
-        } else {
+        } 
+        else 
+        {
+        
         }
-        document.querySelector(".principal").innerHTML = contenido;
+        principal.innerHTML = contenido;
+        principal.style.cssText = "display: flex;"+
+                            "flex-wrap: wrap;"+
+                            "align-content: center;"+
+                            "justify-content: center;"+
+                            "transition: all .5s;";
       });
+      
+
     })
     .catch(function (error) {
       // handle error
@@ -77,4 +163,19 @@ function Busqueda(argument) {
     .then(function () {
       // always executed
     });
+
+  } else{
+    var ocultaprincipal = document.getElementById("contenedor_principal");
+    var visible = "visible";
+    var novisible = "novisible";
+    if(ocultaprincipal.className.includes(novisible)){
+            
+      ocultaprincipal.className = ocultaprincipal.className.replace(novisible,"").trim();
+      ocultaprincipal.className+= " "+ visible;
+      console.log("Se lo quitamos");
+  }
+    
+  }
+
+ 
 }

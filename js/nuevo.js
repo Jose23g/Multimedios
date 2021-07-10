@@ -4,7 +4,7 @@ media = geturl.get('media');
    
       if(media == "tv"){
 
-        axios.get('https://api.themoviedb.org/3/tv/'+id+'?api_key=c94ae96d76db457ccdb3767fef477a02')
+        axios.get('https://api.themoviedb.org/3/tv/'+id+'?api_key=c94ae96d76db457ccdb3767fef477a02&language=es-es')
       .then(function(response) 
       {
         // handle success
@@ -32,7 +32,7 @@ media = geturl.get('media');
         // always executed
       });
 
-      axios.get('https://api.themoviedb.org/3/tv/'+id+'/credits?api_key=c94ae96d76db457ccdb3767fef477a02&language=es-US')
+      axios.get('https://api.themoviedb.org/3/tv/'+id+'/credits?api_key=c94ae96d76db457ccdb3767fef477a02&language=es-es')
       .then(function(response){
          
         
@@ -72,7 +72,7 @@ media = geturl.get('media');
 
       }else{
 
-        axios.get('https://api.themoviedb.org/3/movie/'+id+'?api_key=c94ae96d76db457ccdb3767fef477a02')
+        axios.get('https://api.themoviedb.org/3/movie/'+id+'?api_key=c94ae96d76db457ccdb3767fef477a02&language=es-es')
       .then(function (response) {
         // handle success
         
@@ -105,7 +105,7 @@ media = geturl.get('media');
       });
 
 
-      axios.get('https://api.themoviedb.org/3/movie/'+id+'/credits?api_key=c94ae96d76db457ccdb3767fef477a02&language=es-US ')
+      axios.get('https://api.themoviedb.org/3/movie/'+id+'/credits?api_key=c94ae96d76db457ccdb3767fef477a02&language=es-ES')
       .then(function(response){
         
         let carrusel = "";

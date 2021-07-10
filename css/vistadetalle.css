@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Assistant&display=swap");
 
-h3{
+
+.cast{
+  margin-bottom: 150px;
+}
+h3 {
   font-family: "Assistant", sans-serif;
 }
 .Title{
