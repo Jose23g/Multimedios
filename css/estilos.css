@@ -180,12 +180,8 @@ ul li:hover a{
 }
 
 .imagen{
-    max-width: 100px;
-<<<<<<< HEAD
-    min-width: 90px;
-=======
+    max-width: 110px;
     min-width: 100px;
->>>>>>> 2a8d3ff9bdec916269e0b3dce4942b2d69d973de
     height: auto;
 }
 
