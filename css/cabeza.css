@@ -1,4 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@200&display=swap');
+
+a{
+    text-decoration: none;
+    display: flex;
+    cursor: pointer;
+}
+.Pagina a{
+    font-family: 'Grenze Gotisch', cursive;
+    font-size: 28px;
+}
 
 .principal{
     display:none;
@@ -55,6 +66,7 @@
 }
 .categorias{
     display: none;
+   
 }
 
 .nav-escritorio a{
@@ -161,5 +173,12 @@
     .fg-equis{
         top: 32%;
         left: 173px;
+    }
+    .Pagina a{
+        margin-left: 20px;
+        text-decoration: none;
+        color: #292825;
+        font-family: 'Grenze Gotisch', cursive;
+        font-size: 28px;
     }
 }
