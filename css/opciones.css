@@ -66,6 +66,10 @@ body{
         position: relative;   
         top: 10px;
 }
+.generos a{
+    position: relative;
+    display: inline-flex;
+}
 
     .duracion {
         font-size: 13px;
@@ -81,20 +85,20 @@ body{
         padding-bottom: 2px;
     }
         .iconos i{
-        bottom:-10px;
+        bottom:-12px;
         left: 150px;
         position: relative;
         color: #c1cdd6;
         }
         .descarga i{
         position: relative;
-        bottom: 6px;
+        bottom:3px;
         left: 180px;
         color: #c1cdd6;   
         }
       .calificacion {
             position: relative;
-            top: -26px;
+            top: -22px;
             color: orange;
             font-size: 18px;
             left: 70px;
