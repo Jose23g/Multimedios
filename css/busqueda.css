@@ -21,7 +21,6 @@
     align-items: center;
     flex-direction: row;
 }
-
-.fg-equis{
-display:none;
+.fg-equis{ 
+    display: none; 
 }

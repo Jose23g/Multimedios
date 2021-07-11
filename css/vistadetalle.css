@@ -8,6 +8,7 @@
   display: block; 
 }
 
+
 .cast{
   margin-bottom: 150px;
 }
@@ -528,6 +529,7 @@ li.tooltip a {
     width: auto;
     font-size: 1.3rem;
     color: black;
+    margin-top: 20px;
   }
   .facts {
     width: 100%;
@@ -591,12 +593,17 @@ li.tooltip a {
   .favorito {
     color: rgba(60, 59, 54, 0.29);
     font-size: 14px;
+    position: absolute;
+    right: 100px;
   }
   .califica {
     display: none;
   }
   .descargar {
     font-size: 14px;
+    position: absolute;
+    right: 60px;
+  
   }
   .info {
     position: relative;
