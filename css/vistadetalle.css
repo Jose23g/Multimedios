@@ -595,12 +595,16 @@ li.tooltip a {
   .favorito {
     color: rgba(60, 59, 54, 0.29);
     font-size: 14px;
+    position: absolute;
+    right: 90px;
   }
   .califica {
     display: none;
   }
   .descargar {
     font-size: 14px;
+    position: absolute;
+    right: 50px;
   }
   .info {
     position: relative;

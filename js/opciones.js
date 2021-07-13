@@ -5,11 +5,11 @@ var verpopulares = document.querySelector('.populares');
 var pintaropcionesmenu = document.querySelector('.contenedor_principal');
 var verseries = document.querySelector('.series');
 
-    vermovies.addEventListener('click', function(){
-        movies();
-        window.location="opcionesmenu.html";
+    vermovies.addEventListener('click', movies); //esto fue lo que cambie
+        //movies();
+        //window.location="opcionesmenu.html";
     
-    });
+   // });
 
     verestrenos.addEventListener('click', function(){
      estrenos();
