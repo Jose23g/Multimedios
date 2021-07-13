@@ -3,16 +3,18 @@
   <head>
     <meta
       name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0"
-    />
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0"/>
     <meta charset="UTF-8" />
 
     <link rel="stylesheet" href="css/cabeza.css">
     <link rel="stylesheet" type="text/css" href="./css/modern-normalize.css" />
     <link rel="stylesheet" type="text/css" href="./css/opciones.css" />
-    <link rel="stylesheet" href="css/disenofooter.css">
-    <link rel="stylesheet" href="iconos/css/all.css" />
-    <link rel="stylesheet" href="css/lightslider.css" />
+    <link rel="stylesheet" type="text/css" href="css/disenofooter.css">
+    <link rel="stylesheet" type="text/css" href="iconos/css/all.css" />
+    <link rel="stylesheet" type="text/css" href="css/lightslider.css" />
+    <link rel="stylesheet" type="text/css"  href="css/busqueda.css"/>
+    <link rel="stylesheet" type="text/css" href="css/peli.css"/>
+    <link rel="stylesheet" type="text/css" href="css/abajo.css"/>
     
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="js/JQuery3.3.1.js"></script>
@@ -21,318 +23,25 @@
   </head>
 
   <body>
-    <!--Navigation bar-->
-<div class="flex Cabecera justify-between items-center"></div>
-<!--end of Navigation bar-->
-<main>
-  <div class="Estrenos">
-      <h1 class="TituloInicial">Proximos estrenos</h1>
-      <div class="contenedorslider">
-          <!--<button role="button" id="flecha-izquierda" class="flecha-izquierda"> 
-          <i class="fas fa-angle-left"></i>
-          </button> -->
-          <ul class="contedor-carrusel" id="autoWidth" >
-              <li class="peliculas">
-                       <img src="img/cartelera2.jpg" />
-                 
-                    <div class="informacion">
-                      <h2>Titulo de la Pelicula</h2>
-                      <span class="generos"><a>Ficción</a>,&nbsp;<a>Ciencia-Ficción</a>,&nbsp;<a>Aventura</a> </span>
-                      <span class="duracion">172min </span>
-                       <div class="iconos">
-                      <a><i class="far fa-star fa-sm"></i></a>
-                  </div>  
-                  <div class="descarga">
-                      <a><i class="far fa-arrow-alt-circle-down "></i></a>
-                      </div> 
-                       <div class="calificacion">
-                          <i class="fa fa-star" aria-hidden="true"></i>&nbsp;9.0</div>
-                  </div>
-                  </li>
-              <li class="peliculas">
-                       <img src="img/cartelera3.jpg" />
-                    <div class="informacion">
-                      <h2>Titulo de la Pelicula</h2>
-                      <span class="generos"><a>Ficción</a>,&nbsp;<a>Ciencia-Ficción</a>,&nbsp;<a>Aventura</a> </span>
-                      <span class="duracion">172min </span>
-                       <div class="iconos">
-                      <a><i class="far fa-star fa-sm"></i></a>
-                  </div>  
-                  <div class="descarga">
-                      <a><i class="far fa-arrow-alt-circle-down "></i></a>
-                      </div> 
-                       <div class="calificacion">
-                          <i class="fa fa-star" aria-hidden="true"></i>&nbsp;9.0</div>
-                  </div>
-                  </li>
-              <li class="peliculas">
-                      
-                       <img src="img/cartelera4.jpg" />
-                    <div class="informacion">
-                      <h2>Titulo de la Pelicula</h2>
-                      <span class="generos"><a>Ficción</a>,&nbsp;<a>Ciencia-Ficción</a>,&nbsp;<a>Aventura</a> </span>
-                      <span class="duracion">172min </span>
-                       <div class="iconos">
-                      <a><i class="far fa-star fa-sm"></i></a>
-                  </div>  
-                  <div class="descarga">
-                      <a><i class="far fa-arrow-alt-circle-down "></i></a>
-                      </div> 
-                       <div class="calificacion">
-                          <i class="fa fa-star" aria-hidden="true"></i>&nbsp;9.0</div>
-                  </div>
-                  </li>
-              <li class="peliculas">
-                          
-                       <img src="img/cartelera5.jpg" />
-                 
-                    <div class="informacion">
-                      <h2>Titulo de la Pelicula</h2>
-                      <span class="generos"><a>Ficción</a>,&nbsp;<a>Ciencia-Ficción</a>,&nbsp;<a>Aventura</a> </span>
-                      <span class="duracion">172min </span>
-                       <div class="iconos">
-                      <a><i class="far fa-star fa-sm"></i></a>
-                  </div>  
-                  <div class="descarga">
-                      <a><i class="far fa-arrow-alt-circle-down "></i></a>
-                      </div> 
-                       <div class="calificacion">
-                          <i class="fa fa-star" aria-hidden="true"></i>&nbsp;9.0</div>
-                  </div>
-                  </li>
-              <li class="peliculas">
-                       <img src="img/cartelera1.jpg" />
-                 
-                    <div class="informacion">
-                      <h2>Titulo de la Pelicula</h2>
-                      <span class="generos"><a>Ficción</a>,&nbsp;<a>Ciencia-Ficción</a>,&nbsp;<a>Aventura</a> </span>
-                      <span class="duracion">172min </span>
-                       <div class="iconos">
-                      <a><i class="far fa-star fa-sm"></i></a>
-                  </div>  
-                  <div class="descarga">
-                      <a><i class="far fa-arrow-alt-circle-down "></i></a>
-                      </div> 
-                       <div class="calificacion">
-                          <i class="fa fa-star" aria-hidden="true"></i>&nbsp;9.0</div>
-                  </div>
-                  </li>
-                  <li class="peliculas">
-                
-                       <img src="img/cartelera4.jpg" />
-                 
-                    <div class="informacion">
-                      <h2>Titulo de la Pelicula</h2>
-                      <span class="generos"><a>Ficción</a>,&nbsp;<a>Ciencia-Ficción</a>,&nbsp;<a>Aventura</a> </span>
-                      <span class="duracion">172min </span>
-                       <div class="iconos">
-                      <a><i class="far fa-star fa-sm"></i></a>
-                  </div>  
-                  <div class="descarga">
-                      <a><i class="far fa-arrow-alt-circle-down "></i></a>
-                      </div> 
-                       <div class="calificacion">
-                          <i class="fa fa-star" aria-hidden="true"></i>&nbsp;9.0</div>
-                  </div>
-                  </li>
-              </ul>
-          </div>
-          
-      
-          </div>
-      
-  
-  
-  <div class="Populares">
-      <h1 class="TituloInicial">Populares</h1>
-      
-      <div class="contenedorslider">
-          <ul class="contedor-carrusel" id="populares" >
-              <li class="peliculas">
-                
-                       <img src="img/cartelera2.jpg" />
-                 
-                    <div class="informacion">
-                      <h2>Titulo de la Pelicula</h2>
-                      <span class="generos"><a>Ficción</a>,&nbsp;<a>Ciencia-Ficción</a>,&nbsp;<a>Aventura</a> </span>
-                      <span class="duracion">172min </span>
-                       <div class="iconos">
-                      <a><i class="far fa-star fa-sm"></i></a>
-                  </div>  
-                  <div class="descarga">
-                      <a><i class="far fa-arrow-alt-circle-down "></i></a>
-                      </div> 
-                       <div class="calificacion">
-                          <i class="fa fa-star" aria-hidden="true"></i>&nbsp;9.0</div>
-                  </div>
-                  </li>
-              <li class="peliculas">
-                      
-                       <img src="img/cartelera3.jpg" />
-                 
-      
-                    <div class="informacion">
-                      <h2>Titulo de la Pelicula</h2>
-                      <span class="generos"><a>Ficción</a>,&nbsp;<a>Ciencia-Ficción</a>,&nbsp;<a>Aventura</a> </span>
-                      <span class="duracion">172min </span>
-                       <div class="iconos">
-                      <a><i class="far fa-star fa-sm"></i></a>
-                  </div>  
-                  <div class="descarga">
-                      <a><i class="far fa-arrow-alt-circle-down "></i></a>
-                      </div> 
-                       <div class="calificacion">
-                          <i class="fa fa-star" aria-hidden="true"></i>&nbsp;9.0</div>
-                  </div>
-                  </li>
-              <li class="peliculas">
-                      
-                       <img src="img/cartelera4.jpg" />
-                 
-                    <div class="informacion">
-                      <h2>Titulo de la Pelicula</h2>
-                      <span class="generos"><a>Ficción</a>,&nbsp;<a>Ciencia-Ficción</a>,&nbsp;<a>Aventura</a> </span>
-                      <span class="duracion">172min </span>
-                       <div class="iconos">
-                      <a><i class="far fa-star fa-sm"></i></a>
-                  </div>  
-                  <div class="descarga">
-                      <a><i class="far fa-arrow-alt-circle-down "></i></a>
-                      </div> 
-                       <div class="calificacion">
-                          <i class="fa fa-star" aria-hidden="true"></i>&nbsp;9.0</div>
-                  </div>
-                  </li>
-              <li class="peliculas">
-                       <img src="img/cartelera5.jpg" />
-                  
-                 
-                    <div class="informacion">
-                      <h2>Titulo de la Pelicula</h2>
-                      <span class="generos"><a>Ficción</a>,&nbsp;<a>Ciencia-Ficción</a>,&nbsp;<a>Aventura</a> </span>
-                      <span class="duracion">172min </span>
-                       <div class="iconos">
-                      <a><i class="far fa-star fa-sm"></i></a>
-                  </div>  
-                  <div class="descarga">
-                      <a><i class="far fa-arrow-alt-circle-down "></i></a>
-                      </div> 
-                       <div class="calificacion">
-                          <i class="fa fa-star" aria-hidden="true"></i>&nbsp;9.0</div>
-                  </div>
-                  </li>
-              <li class="peliculas">
-                      
-                       <img src="img/cartelera1.jpg" />
-                 
-                    <div class="informacion">
-                      <h2>Titulo de la Pelicula</h2>
-                      <span class="generos"><a>Ficción</a>,&nbsp;<a>Ciencia-Ficción</a>,&nbsp;<a>Aventura</a> </span>
-                      <span class="duracion">172min </span>
-                       <div class="iconos">
-                      <a><i class="far fa-star fa-sm"></i></a>
-                  </div>  
-                  <div class="descarga">
-                      <a><i class="far fa-arrow-alt-circle-down "></i></a>
-                      </div> 
-                       <div class="calificacion">
-                          <i class="fa fa-star" aria-hidden="true"></i>&nbsp;9.0</div>
-                  </div>
-                  </li>
-                  <li class="peliculas">
-                       <img src="img/cartelera4.jpg" />
-                 
-                    <div class="informacion">
-                      <h2>Titulo de la Pelicula</h2>
-                      <span class="generos"><a>Ficción</a>,&nbsp;<a>Ciencia-Ficción</a>,&nbsp;<a>Aventura</a> </span>
-                      <span class="duracion">172min </span>
-                       <div class="iconos">
-                      <a><i class="far fa-star fa-sm"></i></a>
-                  </div>  
-                  <div class="descarga">
-                      <a><i class="far fa-arrow-alt-circle-down "></i></a>
-                      </div> 
-                       <div class="calificacion">
-                          <i class="fa fa-star" aria-hidden="true"></i>&nbsp;9.0</div>
-                  </div>
-                  </li>
-              </ul>
-          </div>
+    <div class="flex Cabecera justify-between items-center"></div>
 
-      
-          </div>
-      
-  </main>
-          <div class="footer flex justify-between items-center"></div> 
-  <script>
-           $().ready(function() {
-              setTimeout(function(){
-                  $('#autoWidth').lightSlider({
-                  item:4,
-                  loop:true,
-                  slideMove:2,
-                  easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
-                  speed:600,
-                  responsive : 
-                  [
-                      {
-                          breakpoint:800,
-                          settings: 
-                          {
-                              item:2,
-                              slideMove:1,
-                              slideMargin:6,
-                          }
-                      },
-                      {
-                          breakpoint:480,
-                          settings: 
-                          {
-                              item:2,
-                              slideMove:1
-                          }
-                      }   
-                  ]
-              });
-              },500)                
-          });
-  </script>
-  <script>
-           $().ready(function() {
-              setTimeout(function(){
-                  $('#populares').lightSlider({
-                  item:4,
-                  loop:true,
-                  slideMove:2,
-                  easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
-                  speed:600,
-                  responsive : 
-                  [
-                      {
-                          breakpoint:800,
-                          settings: 
-                          {
-                              item:2,
-                              slideMove:1,
-                              slideMargin:6,
-                          }
-                      },
-                      {
-                          breakpoint:480,
-                          settings: 
-                          {
-                              item:2,
-                              slideMove:1
-                          }
-                      }   
-                  ]
-              });
-              },500)                
-          });
-  </script>
+    <div class="contenedor_principal visible" id="contenedor_principal">
+            
+    </div>
+    
+    <div class="principal novisible">
+    </div>
+
+    <div class="abajo flex justify-between items-center"></div> 
+   
+    <div class="footer flex justify-between items-center"></div> 
+
   <script>
     $(function(){
         $(".Cabecera").load("cabecera.html");
+    });
+    $(function(){
+        $(".abajo").load("abajo.html");
     });
     $(function(){
         $(".footer").load("footerp.html");

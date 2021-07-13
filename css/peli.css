@@ -76,6 +76,7 @@
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical; 
     font-family: "Assistant", sans-serif;
+    
     }
 
 .info-peli{
@@ -105,6 +106,7 @@
         height: 170px;
         width: auto;
         background-color: #FAF8FF; 
+        padding-right: 1px;
        
     }
     .imagen{
@@ -164,17 +166,13 @@
     }
     .peli-descripcion p{
        
-        margin-left: 6px;
-        margin-right: 0px;
-        margin-top: 0px;
-        padding-top: 1px;
+        height: 74px;
+        width: 179px;
         font-family: 'Poppins', sans-serif;
-        line-height: 20px;
-        font-size: 11px;
-        letter-spacing: 0.4px;
-        text-align: start;
-        height: 80px;
-        width: 194px;
+        line-height: 18px;
+        font-size: 12px;
+        font-weight: 600;
+        text-align: justify;
     }
     
     .peli-descripcion{
