@@ -1,6 +1,24 @@
 
-const geturl = new URLSearchParams(window.location.search);
-id = geturl.get('tipo');
+    vermovies.addEventListener('click', movies); //esto fue lo que cambie
+        //movies();
+        //window.location="opcionesmenu.html";
+    
+   // });
+
+    verestrenos.addEventListener('click', function(){
+     estrenos();
+     window.location="opcionesmenu.html";
+     });
+
+     verpopulares.addEventListener('click', function(){
+     Populares();
+     window.location="opcionesmenu.html";
+    });
+ 
+    verseries.addEventListener('click', function(){
+        series();
+        window.location="opcionesmenu.html";
+       });
 
 if(id == "movies"){
   function movies () {
