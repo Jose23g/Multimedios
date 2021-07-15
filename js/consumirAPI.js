@@ -12,7 +12,7 @@
 
                     contenido += 
                     "<div class=\"pelis\">"+
-                            "<a onclick=\"eligiendo()\" href=\"detallePeli.html?id="+element.id+"&media="+element.media_type+"\">"+
+                            "<a href=\"detallePeli.html?id="+element.id+"&media="+element.media_type+"\">"+
                                 "<div class=\"imagen\">"+
                                     "<img src=\"https://image.tmdb.org/t/p/w500"+element.poster_path+"\" class=\"cartelera\">"+
                                 "</div>"+
@@ -35,7 +35,7 @@
 
                     contenido += 
                    "<div class=\"pelis\">"+
-                        "<a onclick=\"eligiendo()\" href=\"detallePeli.html?id="+element.id+"&media="+element.media_type+"\">"+
+                        "<a href=\"detallePeli.html?id="+element.id+"&media="+element.media_type+"\">"+
                             "<div class=\"imagen\">"+
                                 "<img src=\"https://image.tmdb.org/t/p/w500"+element.poster_path+"\" class=\"cartelera\">"+
                             "</div>"+
