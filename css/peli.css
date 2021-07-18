@@ -74,7 +74,6 @@
     white-space: pre-line;
     margin-bottom: 0px;
     padding-right: 6px;
-    margin-top: -20px;
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 3;
@@ -99,6 +98,7 @@
 	border-color: orange;
 	border: solid;
     position: relative;
+    display: none;
     }
 
 .circulo{
