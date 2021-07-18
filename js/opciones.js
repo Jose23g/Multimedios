@@ -13,12 +13,12 @@ var verseries = document.querySelector('.series');
         axios.get('https://api.themoviedb.org/3/movie/upcoming?language=es-es&page=1&api_key=c94ae96d76db457ccdb3767fef477a02')
         .then(function(response) { 
           let contenido = "";
-          contenido +="<h2>Estrenos</h2>";
+          contenido +="<h2>Estrenos</h2><div class=\"flex wrap items-center\" >";
           var peli =  response.data.results; 
           peli.forEach(element => {
             contenido += 
             "<div class=\"pelis\">"+
-                 "<a onclick=\"eligiendo()\" href=\"detallePeli.html?id="+element.id+"&media="+element.media_type+"\">"+
+                 "<a onclick=\"eligiendo()\" href=\"detallePeli.html?id="+element.id+"&media=movie\">"+
                      "<div class=\"imagen\">"+
                          "<img src=\"https://image.tmdb.org/t/p/w500"+element.poster_path+"\" class=\"cartelera\">"+
                      "</div>"+
@@ -38,6 +38,7 @@ var verseries = document.querySelector('.series');
              "</div>";
 
     });
+    contenido +="</div>"
           pintaropcionesmenu.innerHTML = contenido;
         }).catch(function (error) {
           // handle error
@@ -52,7 +53,7 @@ var verseries = document.querySelector('.series');
         axios.get('https://api.themoviedb.org/3/trending/all/week?api_key=c94ae96d76db457ccdb3767fef477a02')
         .then(function(response) {
           let contenido = "";
-          contenido +="<h2>Populares</h2>"; 
+          contenido +="<h2>Estrenos</h2><div class=\"flex wrap items-center\" >";
           var peli =  response.data.results; 
           peli.forEach(element => {
             contenido += 
@@ -77,6 +78,7 @@ var verseries = document.querySelector('.series');
              "</div>";
 
           });
+          contenido +="</div>"
           pintaropcionesmenu.innerHTML = contenido;
         }).catch(function (error) {
           // handle error
@@ -93,12 +95,12 @@ var verseries = document.querySelector('.series');
         .then(function(response) { 
           let contenido = "";
           var peli =  response.data.results; 
-          contenido +="<h2>SERIES</h2>";
+          contenido +="<h2>Estrenos</h2><div class=\"flex wrap items-center\" >";
           peli.forEach(element => { 
 
             contenido += 
             "<div class=\"pelis\">"+
-                 "<a href=\"detallePeli.html?id="+element.id+"&media="+element.media_type+"\">"+
+                 "<a href=\"detallePeli.html?id="+element.id+"&media=tv\">"+
                      "<div class=\"imagen\">"+
                          "<img src=\"https://image.tmdb.org/t/p/w500"+element.poster_path+"\" class=\"cartelera\">"+
                      "</div>"+
@@ -117,7 +119,7 @@ var verseries = document.querySelector('.series');
                  "</a>"+
              "</div>";
           });
-
+          contenido +="</div>"
           pintaropcionesmenu.innerHTML = contenido; 
 
 
@@ -134,14 +136,14 @@ var verseries = document.querySelector('.series');
         axios.get('https://api.themoviedb.org/3/movie/popular?api_key=c94ae96d76db457ccdb3767fef477a02&language=es-es&page=1')
         .then(function (response) {
             let contenido = "";
-            contenido += "<h2>Peliculas</h2>"
+            contenido +="<h2>Estrenos</h2><div class=\"flex wrap items-center\" >";
             var peli = response.data.results;
             console.log("Vamos a pintar");
             peli.forEach(element => {
                 
                     contenido += 
                     "<div class=\"pelis\">"+
-                         "<a onclick=\"eligiendo()\" href=\"detallePeli.html?id="+element.id+"&media="+element.media_type+"\">"+
+                         "<a onclick=\"eligiendo()\" href=\"detallePeli.html?id="+element.id+"&media=movie\">"+
                              "<div class=\"imagen\">"+
                                  "<img src=\"https://image.tmdb.org/t/p/w500"+element.poster_path+"\" class=\"cartelera\">"+
                              "</div>"+
@@ -161,7 +163,7 @@ var verseries = document.querySelector('.series');
                      "</div>";
 
             });
-
+            contenido +="</div>"
             pintaropcionesmenu.innerHTML = contenido;
         })
         .catch(function (error) {

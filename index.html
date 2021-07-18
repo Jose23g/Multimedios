@@ -3,6 +3,13 @@
 
 <head>
     <meta charset="UTF-8"/>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/JQuery3.3.1.js"></script>
+    <script src="js/lightslider.js" ></script>
+    <script src="js/sliderAPI.js"></script>
+    <script src="js/consumirAPI.js"></script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/lightslider.css">
     <link rel="stylesheet" href="iconos/css/all.css">
@@ -13,13 +20,6 @@
     <link rel="stylesheet" href="css/peli.css">
     <link rel="stylesheet" href="css/disenofooter.css">
 
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    
-    
-    <script src="js/consumirAPI.js"></script>
-    <script src="js/JQuery3.3.1.js"></script>
-    <script src="js/lightslider.js" ></script>
-    <script src="js/sliderAPI.js"></script>
  
     <title>Proyecto Personal</title>
 </head>
@@ -91,5 +91,11 @@
           $(".footer").load("footerp.html");
         });
     </script>
+    <script>
+        document.addEventListener("DOMContentLoaded",function(event){
+        //FUNCION
+        console.log('Contenido cargado');
+        });
+        </script>
 </body>
 </html>
