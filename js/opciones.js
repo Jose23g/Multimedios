@@ -13,7 +13,7 @@ var verseries = document.querySelector('.series');
         axios.get('https://api.themoviedb.org/3/movie/upcoming?language=es-es&page=1&api_key=c94ae96d76db457ccdb3767fef477a02')
         .then(function(response) { 
           let contenido = "";
-          contenido +="<h2>Estrenos</h2><div class=\"flex wrap items-center\" >";
+          contenido +="<h2>Estrenos</h2><div class=\"flex wrap items-center justify-center \" >";
           var peli =  response.data.results; 
           peli.forEach(element => {
             contenido += 
@@ -50,10 +50,10 @@ var verseries = document.querySelector('.series');
        }
 
        function populares(){
-        axios.get('https://api.themoviedb.org/3/trending/all/week?api_key=c94ae96d76db457ccdb3767fef477a02')
+        axios.get('https://api.themoviedb.org/3/trending/all/week?api_key=c94ae96d76db457ccdb3767fef477a02&language=es-ES')
         .then(function(response) {
           let contenido = "";
-          contenido +="<h2>Estrenos</h2><div class=\"flex wrap items-center\" >";
+          contenido +="<h2>Estrenos</h2><div class=\"flex wrap items-center justify-center\" >";
           var peli =  response.data.results; 
           peli.forEach(element => {
             contenido += 
@@ -91,11 +91,11 @@ var verseries = document.querySelector('.series');
       
 
        function series(){
-        axios.get('https://api.themoviedb.org/3/tv/popular?api_key=c94ae96d76db457ccdb3767fef477a02&idioma=es-es&página=1')
+        axios.get('https://api.themoviedb.org/3/tv/popular?api_key=c94ae96d76db457ccdb3767fef477a02&language=es-ES&página=1')
         .then(function(response) { 
           let contenido = "";
           var peli =  response.data.results; 
-          contenido +="<h2>Estrenos</h2><div class=\"flex wrap items-center\" >";
+          contenido +="<h2>Estrenos</h2><div class=\"flex wrap items-center justify-center\" >";
           peli.forEach(element => { 
 
             contenido += 
@@ -136,7 +136,7 @@ var verseries = document.querySelector('.series');
         axios.get('https://api.themoviedb.org/3/movie/popular?api_key=c94ae96d76db457ccdb3767fef477a02&language=es-es&page=1')
         .then(function (response) {
             let contenido = "";
-            contenido +="<h2>Estrenos</h2><div class=\"flex wrap items-center\" >";
+            contenido +="<h2>Estrenos</h2><div class=\"flex wrap items-center justify-center\" >";
             var peli = response.data.results;
             console.log("Vamos a pintar");
             peli.forEach(element => {
