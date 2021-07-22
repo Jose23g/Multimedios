@@ -1,13 +1,21 @@
 var vermovies = document.querySelector('.movies'); 
+var verpelis = document.querySelector('.peliculaspp');
 var verestrenos = document.querySelector('.estrenos'); 
+var vernuevos = document.querySelector('.new');
 var verpopulares = document.querySelector('.popular'); 
+var verpopu= document.querySelector('.popularesp');
 var pintaropcionesmenu = document.querySelector('.contenedor_principal'); 
 var verseries = document.querySelector('.series');
+var vertv = document.querySelector('.tvseries');
 
-    vermovies.addEventListener('click', movies); 
+    vermovies.addEventListener('click', movies);
+    verpelis.addEventListener('click', movies);
     verestrenos.addEventListener('click', estrenos);
+    vernuevos.addEventListener('click', estrenos);
     verpopulares.addEventListener('click',populares);
+    verpopu.addEventListener('click', populares);
     verseries.addEventListener('click',series); 
+    vertv.addEventListener('click',series);
 
        function estrenos() {
         axios.get('https://api.themoviedb.org/3/movie/upcoming?language=es-es&page=1&api_key=c94ae96d76db457ccdb3767fef477a02')
