@@ -1,4 +1,4 @@
-var vermovies = document.querySelector(".movies"); 
+var vermovies = document.querySelector('.movies'); 
 var verestrenos = document.querySelector('.estrenos'); 
 var verpopulares = document.querySelector('.popular'); 
 var pintaropcionesmenu = document.querySelector('.contenedor_principal'); 
@@ -53,7 +53,7 @@ var verseries = document.querySelector('.series');
         axios.get('https://api.themoviedb.org/3/trending/all/week?api_key=c94ae96d76db457ccdb3767fef477a02&language=es-ES')
         .then(function(response) {
           let contenido = "";
-          contenido +="<h2>Estrenos</h2><div class=\"flex wrap items-center justify-center\" >";
+          contenido +="<h2>Populares</h2><div class=\"flex wrap items-center justify-center\" >";
           var peli =  response.data.results; 
           peli.forEach(element => {
             if(element.media_type == "tv"){
@@ -117,11 +117,11 @@ var verseries = document.querySelector('.series');
       
 
        function series(){
-        axios.get('https://api.themoviedb.org/3/tv/popular?api_key=c94ae96d76db457ccdb3767fef477a02&language=es-ES&página=1')
+        axios.get('https://api.themoviedb.org/3/tv/popular?api_key=c94ae96d76db457ccdb3767fef477a02&language=es-ES&page=1')
         .then(function(response) { 
           let contenido = "";
           var peli =  response.data.results; 
-          contenido +="<h2>Estrenos</h2><div class=\"flex wrap items-center justify-center\" >";
+          contenido +="<h2>Series</h2><div class=\"flex wrap items-center justify-center\" >";
           peli.forEach(element => { 
 
             contenido += 
@@ -162,7 +162,7 @@ var verseries = document.querySelector('.series');
         axios.get('https://api.themoviedb.org/3/movie/popular?api_key=c94ae96d76db457ccdb3767fef477a02&language=es-es&page=1')
         .then(function (response) {
             let contenido = "";
-            contenido +="<h2>Estrenos</h2><div class=\"flex wrap items-center justify-center\" >";
+            contenido +="<h2>Peliculas</h2><div class=\"flex wrap items-center justify-center\" >";
             var peli = response.data.results;
             console.log("Vamos a pintar");
             peli.forEach(element => {
