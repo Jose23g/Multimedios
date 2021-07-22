@@ -529,7 +529,7 @@ li.tooltip a {
 }
 
   h2 {
-    width: auto;
+    width: 395px;
     font-size: 1.3rem;
     color: black;
   }
@@ -541,6 +541,7 @@ li.tooltip a {
     font-size: 12px;
   }
   .generos {
+    width: 360px;
     font-family: "Assistant", sans-serif;
     color: #c1c7c5;
   }
@@ -555,6 +556,10 @@ li.tooltip a {
     width: 3rem;
     height: 0.9rem;
     font-family: "Assistant", sans-serif;
+    position: absolute;
+    top: 159px;
+    left: 97px;
+    margin-left: 0px;
   }
   .acciones {
     margin-top: 0px;
@@ -564,8 +569,8 @@ li.tooltip a {
     right: auto;
     bottom: auto;
     position: relative;
-    top: 198px;
-    left: 252px;
+    left: 43px;
+    top: 182px;
   }
   .chart {
     display: none;
