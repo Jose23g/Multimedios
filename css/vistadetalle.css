@@ -310,14 +310,17 @@ h3 .informacion{
 .generos {
   display: inline-flex;
   height: 1rem;
-  width: 12rem;
+  width: 536px;
   padding-left: 4px;
   font-family: "Source Sans Pro", sans-serif;
 }
 .duracion {
-    margin-left: 95px;
+  position: absolute;
+
+  left: 759px;
+  right: 1px;
+  margin-top: 61px;
   top: 124px;
-  left: -240px;
   border-radius: 8px;
   background-color: #f0612c;
   width: 4rem;
